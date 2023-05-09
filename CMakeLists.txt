@@ -3,4 +3,4 @@ project(EDA2_proyecto C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(EDA2_proyecto main.c)
+add_executable(EDA2_proyecto main.c menu.c)

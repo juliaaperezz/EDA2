@@ -76,9 +76,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/functions.c">
-			<Option target="EDA2_proyecto"/>
-		</Unit>
 		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/main.c">
 			<Option target="EDA2_proyecto"/>
 		</Unit>

@@ -6,11 +6,11 @@
 #define MAX_LENGHT 50
 #include <stdio.h>
 #include <string.h>
-#define INVALID_OPTION
-#define OPTION_NEW
-#define OPTION_EXIST
-#define OPTION_OPERATE
-#define OPTION_QUIT -1
+#define INVALID_OPTION -1
+#define OPTION_NEW 1
+#define OPTION_EXIST 2
+#define OPTION_OPERATE 3
+#define OPTION_QUIT 0
 
 typedef struct{
     char username[MAX_LENGHT];

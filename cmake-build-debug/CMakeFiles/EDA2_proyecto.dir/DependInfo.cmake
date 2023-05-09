@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/carlanunezvinas/CLionProjects/EDA2/functions.c" "CMakeFiles/EDA2_proyecto.dir/functions.c.o" "gcc" "CMakeFiles/EDA2_proyecto.dir/functions.c.o.d"
   "/Users/carlanunezvinas/CLionProjects/EDA2/main.c" "CMakeFiles/EDA2_proyecto.dir/main.c.o" "gcc" "CMakeFiles/EDA2_proyecto.dir/main.c.o.d"
   "/Users/carlanunezvinas/CLionProjects/EDA2/menu.c" "CMakeFiles/EDA2_proyecto.dir/menu.c.o" "gcc" "CMakeFiles/EDA2_proyecto.dir/menu.c.o.d"
   )

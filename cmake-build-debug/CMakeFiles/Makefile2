@@ -81,12 +81,12 @@ clean: CMakeFiles/EDA2_proyecto.dir/clean
 CMakeFiles/EDA2_proyecto.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/carlanunezvinas/CLionProjects/EDA2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target EDA2_proyecto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/carlanunezvinas/CLionProjects/EDA2/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target EDA2_proyecto"
 .PHONY : CMakeFiles/EDA2_proyecto.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EDA2_proyecto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlanunezvinas/CLionProjects/EDA2/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlanunezvinas/CLionProjects/EDA2/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EDA2_proyecto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlanunezvinas/CLionProjects/EDA2/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/EDA2_proyecto.dir/rule

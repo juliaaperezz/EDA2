@@ -33,12 +33,20 @@ void mostrarMenuPrincipal() {
         printf("Ingrese su opción: ");
         scanf("%d", &opcion);
 
-        if (opcion == 1)
+        if (opcion == 1){
             insertarUsuario();
-        else if (opcion == 2)
+            mostrarMenuPrincipal();
+        }
+
+        else if (opcion == 2){
             listarUsuarios();
-        else if (opcion == 3)
+            mostrarMenuPrincipal();
+        }
+
+        else if (opcion == 3){
             menuUsuario();
+            mostrarMenuPrincipal();
+        }
         else if (opcion == 4)
             printf("Saliendo...\n");
         else

@@ -9,13 +9,17 @@
 #include "../headers/menu.h"
 #include "menu.c"
 #include "main.c"
+#include "../headers/usuario.h"
 
 // (Interfaz usuario)
 // Declaración de funciones
 void llenarDatosUsuario(Usuario* usuario);
 void mostrarDatosUsuario(Usuario *usuario);
 
-int main() {
+
+// menú que no hará falta
+
+int menu_interfaz_usuario() {
     Usuario usuarios[MAX_USUARIOS];
     int numUsuarios = 0;
     int opcion;
@@ -78,11 +82,11 @@ void llenarDatosUsuario(Usuario* usuario) {
 }
 
 // Función para mostrar los datos de un usuario
-void mostrarDatosUsuario(Usuario usuario) {
-    printf("Nombre de usuario: %s\n", usuario.nombreUsuario);
-    printf("Edad: %d\n", usuario.edad);
-    printf("Correo electrónico: %s\n", usuario.correoElectronico);
-    printf("Ubicación: %s\n", usuario.ubicacion);
+void mostrarDatosUsuario(Usuario* usuario) {
+    printf("Nombre de usuario: %s\n", usuario->nombreUsuario);
+    printf("Edad: %d\n", usuario->edad);
+    printf("Correo electrónico: %s\n", usuario->correoElectronico);
+    printf("Ubicación: %s\n", usuario->ubicacion);
     printf("Gustos o preferencias:\n");
     for (int i = 0; i < 5; i++) {
         printf("- %s\n", usuario.gustos[i]);

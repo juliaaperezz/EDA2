@@ -10,7 +10,6 @@
 #include "menu.c"
 
 
-
 // Declaración de funciones
 void insertarUsuario();
 void listarUsuarios();
@@ -23,7 +22,7 @@ void volverAlMenuPrincipal();
 
 void insertarUsuario() {
     printf("Opción 'Insertar un nuevo usuario' seleccionada.\n");
-    llenarDatosUsuario(Usuario* Usuario);
+
 }
 
 void listarUsuarios() {

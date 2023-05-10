@@ -5,6 +5,7 @@
 #include "../headers/usuario.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "../headers/funciones_menu.h"
 #include "../headers/menu.h"
 #include "menu.c"

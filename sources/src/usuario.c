@@ -93,3 +93,16 @@ void mostrarDatosUsuario(Usuario* usuario) {
     }
 }
 
+// Función para buscar una persona por su usuario
+struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
+    struct Node *current = head;
+    while (current != NULL) {
+        if (strcmp(current->data.nombreUsuario, nombreUsuario, MAX_LENGHT) == 0) {
+            return current; // Se encontró el usuario
+        }
+        current = current->next;
+    }
+    return NULL; // No se encontró el usuario
+}
+
+

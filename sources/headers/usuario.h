@@ -22,7 +22,7 @@
 // Definición del typedef para el usuario
 typedef struct {
     char nombreUsuario[MAX_LENGHT];
-    int edad;
+    int  edad;
     char correoElectronico[MAX_LENGHT];
     char ubicacion[MAX_LENGHT];
     char gustos[MAX_INTERESTS][MAX_LENGHT];

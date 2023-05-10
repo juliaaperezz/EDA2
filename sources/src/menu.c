@@ -10,9 +10,11 @@
 
 #include <stdio.h>
 #include "funciones_menu.c"
-#include "../headers/funciones_menu.h"
 #include "usuario.c"
+#include "user_linked.c"
+#include "../headers/funciones_menu.h"
 #include "../headers/usuario.h"
+
 
 // Declaración de funciones
 void mostrarMenuPrincipal();
@@ -70,16 +72,21 @@ void menuUsuario() {
         printf("Ingrese su opción: ");
         scanf("%d", &opcion);
 
-        if (opcion == 1)
+        if (opcion == 1){
             enviarSolicitudAmistad();
-        else if (opcion == 2)
+            menuUsuario();
+        }else if (opcion == 2){
             gestionarSolicitudesPendientes();
-        else if (opcion == 3)
+            menuUsuario();
+        }else if (opcion == 3){
             realizarPublicacion();
-        else if (opcion == 4)
+            menuUsuario();
+        }else if (opcion == 4){
             listarPublicaciones();
-        else if (opcion == 5)
+            menuUsuario();
+        }else if (opcion == 5){
             volverAlMenuPrincipal();
+        }
         else
             printf("Opción inválida. Por favor, ingrese una opción válida.\n");
     } while (opcion != 5);

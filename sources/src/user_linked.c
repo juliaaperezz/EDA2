@@ -22,7 +22,7 @@ struct Node{
 void insertarUsuario(struct Node **head, Usuario* usuario){
     //allocate memory for node
     struct Node *newNode = NULL;
-    newNode = malloc(sizeof(struct Node));
+    newNode = (struct Node*) malloc(sizeof(struct Node));
 
     //assign data to newNode
     Usuario data;
@@ -54,7 +54,13 @@ void insertarUsuario(struct Node **head, Usuario* usuario){
     newNode->prev = temp;
 }
 
-void listarUsers{
-    
 
+void listarUsuarios(struct Node **head){
+    int counter = 1;
+    struct Node* current = head;
+    while(current != NULL){
+        printf("%d. %s \n", counter, current->data.nombreUsuario);
+        current = current->next;
+        counter++;
+    }
 }

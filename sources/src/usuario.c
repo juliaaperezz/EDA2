@@ -45,7 +45,7 @@ int menu_interfaz_usuario() {
             case 2:
                 printf("=== Usuarios registrados ===\n");
                 for (int i = 0; i < numUsuarios; i++) {
-                    mostrarDatosUsuario(usuarios[i]);
+                    mostrarDatosUsuario(&usuarios[i]);
                     printf("\n");
                 }
                 break;
@@ -66,13 +66,13 @@ void llenarDatosUsuario(Usuario* usuario) {
     printf("Ingrese el nombre de usuario: ");
     scanf("%s", usuario->nombreUsuario);
 
-    printf("Ingrese la edad: ");
+    printf("Ingrese su edad: ");
     scanf("%d", &(usuario->edad));
 
-    printf("Ingrese la dirección de correo electrónico: ");
+    printf("Ingrese su dirección de correo electrónico: ");
     scanf("%s", usuario->correoElectronico);
 
-    printf("Ingrese la ubicación: ");
+    printf("Ingrese su ubicación: ");
     scanf("%s", usuario->ubicacion);
 
     printf("Ingrese 5 gustos o preferencias separados por espacios:\n");
@@ -89,7 +89,7 @@ void mostrarDatosUsuario(Usuario* usuario) {
     printf("Ubicación: %s\n", usuario->ubicacion);
     printf("Gustos o preferencias:\n");
     for (int i = 0; i < 5; i++) {
-        printf("- %s\n", usuario.gustos[i]);
+        printf("- %s\n", usuario->gustos[i]);
     }
 }
 

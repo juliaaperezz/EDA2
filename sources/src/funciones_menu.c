@@ -6,10 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdbool.h>
 #include "usuario.c"
 #include "user_linked.c"
 #include "../headers/usuario.h"
 #include "menu.c"
+
 
 
 // Declaración de funciones
@@ -20,6 +22,10 @@ void gestionarSolicitudesPendientes();
 void realizarPublicacion();
 void listarPublicaciones();
 void volverAlMenuPrincipal();
+int es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado);
+void agregar_solicitud_pendiente(Usuario* usuariobuscado,Solicitudes* solicitud);
+void crear_solicitud_amistad(Usuario* usuarioactual, Usuario* usuariobuscado);
+
 
 
 void insertarUsuario() {
@@ -61,19 +67,31 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Node* usuarioActual) {
     }
 
     // Creamos la solicitud de amistad y la agregamos a la lista de solicitudes pendientes del amigo
-    SolicitudAmistad* solicitud = crear_solicitud_amistad(usuarioActual, nodoAmigo->Usuario);
-    agregar_solicitud_pendiente(nodoAmigo->Usuario, solicitud);
-    printf("Solicitud de amistad enviada a %s.\n", nodoAmigo->Usuario->nombreUsuario);
-*/
- }
-
-
-
-void es_amigo(){
+    SolicitudAmistad* solicitud = crear_solicitud_amistad(usuarioActual, nodoAmigo->data);
+    agregar_solicitud_pendiente(nodoAmigo->data, solicitud);
+    printf("Solicitud de amistad enviada a %s.\n", nodoAmigo->data->nombreUsuario);
 
 }
 
-void solicitud_pendiente(){
+
+
+i es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado){
+    if (buscar_usuario(usuarioactual, usuariobuscado->nombreUsuario) == NULL){
+        printf("Este ususario y tu ya sois amigos");
+        return TRUE;
+    }
+    else return FALSE;
+}
+
+void solicitud_pendiente(Usuario* usuarioactual,Usuario* usuariobuscado){
+
+}
+
+void crear_solicitud_amistad(Usuario* usuarioactual, Usuario* usuariobuscado){
+
+}
+
+void agregar_solicitud_pendiente(Usuario* usuariobuscado,Solicitudes* solicitud){
 
 }
 

@@ -8,6 +8,9 @@
 
 #endif //EDA2_PROYECTO_FUNCIONES_MENU_H
 
+#define TRUE 1
+#define FALSE 0
+
 
 
 

@@ -76,10 +76,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/main.c">
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/headers/funciones_menu.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/menu.c">
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/headers/menu.h">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/headers/user_linked.h">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/headers/usuario.h">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/src/funciones_menu.c">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/src/main.c">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/src/menu.c">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/src/user_linked.c">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/sources/src/usuario.c">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
 		<Unit filename="/Users/carlanunezvinas/CLionProjects/EDA2/CMakeLists.txt">

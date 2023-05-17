@@ -19,15 +19,12 @@ struct Node{
 
 
 //insert a newNode at the end of the list
-void insertarUsuario(struct Node **head, Usuario* usuario){
+void addUsuario(struct Node **head, Usuario* usuario){
     //allocate memory for node
     struct Node *newNode = NULL;
     newNode = (struct Node*) malloc(sizeof(struct Node));
 
     //assign data to newNode
-    Usuario data;
-    data = llenarDatosUsuario(usuario);  //preguntar como enlazar los distintos documentos para reutilizar funciones existentes
-    //funcion funciones_menu.c
     newNode->data = data;
 
     //assign NULL to next of newNode

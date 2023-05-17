@@ -129,53 +129,125 @@ EDA2_proyecto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/build
 .PHONY : EDA2_proyecto/fast
 
-main.o: main.c.o
-.PHONY : main.o
+sources/src/funciones_menu.o: sources/src/funciones_menu.c.o
+.PHONY : sources/src/funciones_menu.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/main.c.o
-.PHONY : main.c.o
+sources/src/funciones_menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.o
+.PHONY : sources/src/funciones_menu.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+sources/src/funciones_menu.i: sources/src/funciones_menu.c.i
+.PHONY : sources/src/funciones_menu.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/main.c.i
-.PHONY : main.c.i
+sources/src/funciones_menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.i
+.PHONY : sources/src/funciones_menu.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+sources/src/funciones_menu.s: sources/src/funciones_menu.c.s
+.PHONY : sources/src/funciones_menu.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/main.c.s
-.PHONY : main.c.s
+sources/src/funciones_menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.s
+.PHONY : sources/src/funciones_menu.c.s
 
-menu.o: menu.c.o
-.PHONY : menu.o
+sources/src/main.o: sources/src/main.c.o
+.PHONY : sources/src/main.o
 
 # target to build an object file
-menu.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/menu.c.o
-.PHONY : menu.c.o
+sources/src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.o
+.PHONY : sources/src/main.c.o
 
-menu.i: menu.c.i
-.PHONY : menu.i
+sources/src/main.i: sources/src/main.c.i
+.PHONY : sources/src/main.i
 
 # target to preprocess a source file
-menu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/menu.c.i
-.PHONY : menu.c.i
+sources/src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.i
+.PHONY : sources/src/main.c.i
 
-menu.s: menu.c.s
-.PHONY : menu.s
+sources/src/main.s: sources/src/main.c.s
+.PHONY : sources/src/main.s
 
 # target to generate assembly for a file
-menu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/menu.c.s
-.PHONY : menu.c.s
+sources/src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.s
+.PHONY : sources/src/main.c.s
+
+sources/src/menu.o: sources/src/menu.c.o
+.PHONY : sources/src/menu.o
+
+# target to build an object file
+sources/src/menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.o
+.PHONY : sources/src/menu.c.o
+
+sources/src/menu.i: sources/src/menu.c.i
+.PHONY : sources/src/menu.i
+
+# target to preprocess a source file
+sources/src/menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.i
+.PHONY : sources/src/menu.c.i
+
+sources/src/menu.s: sources/src/menu.c.s
+.PHONY : sources/src/menu.s
+
+# target to generate assembly for a file
+sources/src/menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.s
+.PHONY : sources/src/menu.c.s
+
+sources/src/user_linked.o: sources/src/user_linked.c.o
+.PHONY : sources/src/user_linked.o
+
+# target to build an object file
+sources/src/user_linked.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.o
+.PHONY : sources/src/user_linked.c.o
+
+sources/src/user_linked.i: sources/src/user_linked.c.i
+.PHONY : sources/src/user_linked.i
+
+# target to preprocess a source file
+sources/src/user_linked.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.i
+.PHONY : sources/src/user_linked.c.i
+
+sources/src/user_linked.s: sources/src/user_linked.c.s
+.PHONY : sources/src/user_linked.s
+
+# target to generate assembly for a file
+sources/src/user_linked.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.s
+.PHONY : sources/src/user_linked.c.s
+
+sources/src/usuario.o: sources/src/usuario.c.o
+.PHONY : sources/src/usuario.o
+
+# target to build an object file
+sources/src/usuario.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.o
+.PHONY : sources/src/usuario.c.o
+
+sources/src/usuario.i: sources/src/usuario.c.i
+.PHONY : sources/src/usuario.i
+
+# target to preprocess a source file
+sources/src/usuario.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.i
+.PHONY : sources/src/usuario.c.i
+
+sources/src/usuario.s: sources/src/usuario.c.s
+.PHONY : sources/src/usuario.s
+
+# target to generate assembly for a file
+sources/src/usuario.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.s
+.PHONY : sources/src/usuario.c.s
 
 # Help Target
 help:
@@ -186,12 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... EDA2_proyecto"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
+	@echo "... sources/src/funciones_menu.o"
+	@echo "... sources/src/funciones_menu.i"
+	@echo "... sources/src/funciones_menu.s"
+	@echo "... sources/src/main.o"
+	@echo "... sources/src/main.i"
+	@echo "... sources/src/main.s"
+	@echo "... sources/src/menu.o"
+	@echo "... sources/src/menu.i"
+	@echo "... sources/src/menu.s"
+	@echo "... sources/src/user_linked.o"
+	@echo "... sources/src/user_linked.i"
+	@echo "... sources/src/user_linked.s"
+	@echo "... sources/src/usuario.o"
+	@echo "... sources/src/usuario.i"
+	@echo "... sources/src/usuario.s"
 .PHONY : help
 
 

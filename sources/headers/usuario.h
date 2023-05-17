@@ -7,7 +7,6 @@
 
 #endif //EDA2_PROYECTO_USUARIO_H
 
-
 #define MAX_INTERESTS 5
 #define MAX_LENGHT 100
 #define MAX_USUARIOS 100
@@ -25,5 +24,5 @@ typedef struct {
     int  edad;
     char correoElectronico[MAX_LENGHT];
     char ubicacion[MAX_LENGHT];
-    char gustos[MAX_INTERESTS][MAX_LENGHT];
+    int gustos[MAX_INTERESTS][MAX_LENGHT];
 } Usuario;

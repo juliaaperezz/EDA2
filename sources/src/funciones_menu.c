@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include "usuario.c"
+#include "user_linked.c"
 #include "../headers/usuario.h"
 #include "menu.c"
 
@@ -47,12 +48,16 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Node* usuarioActual) {
         scanf("%s", nombreAmigo);
         nodoAmigo = buscar_usuario(listaUsuarios, nombreAmigo);
     }
-/*
+
+    // Verificamos que no sean amigos ya los usuarios
+    if (es_amigo(usuarioActual, nodoAmigo->data) == TRUE) {
+        return; //en caso que ya seas amigo del usuario salimos de esta función
+    }
+
     // Verificamos que no se haya enviado ya una solicitud de amistad a este usuario
-    if (es_amigo(usuarioActual, nodoAmigo->Usuario) || // aun se tiene que crear la funcion es_amigo
-        solicitud_pendiente(usuarioActual, nodoAmigo->Usuario)) { // solicitud pendiente tamien se tiene ue crear
-        printf("Ya ha enviado una solicitud de amistad a este usuario.\n");
-        return;
+    if (solicitud_pendiente(usuarioActual, nodoAmigo->data) == TRUE) {  // solicitud pendiente tamien se tiene ue crea
+        printf("Ya ha enviado una solicitud de amistad a este usuario.  :) \n");
+        return; //si ya ha enviado una solicitud de amistad se sale
     }
 
     // Creamos la solicitud de amistad y la agregamos a la lista de solicitudes pendientes del amigo

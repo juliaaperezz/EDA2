@@ -30,12 +30,13 @@ void crear_solicitud_amistad(Usuario* usuarioactual, Usuario* usuariobuscado);
 
 void insertarUsuario() {
     printf("Opción 'Insertar un nuevo usuario' seleccionada.\n");
-
+    Usuario data;
+    data = llenarDatosUsuario(usuario);
+    addUsuario(head, data);
 }
 
 void listarUsuarios() {
     printf("Opción 'Listar todos los usuarios existentes' seleccionada.\n");
-
 }
 
 

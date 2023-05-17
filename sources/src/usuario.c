@@ -107,7 +107,7 @@ void mostrarDatosUsuario(Usuario* usuario) {
 struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
     struct Node *current = head;
     while (current != NULL) {
-        if (strcmp(current->data.nombreUsuario, nombreUsuario, MAX_LENGHT) == 0) {
+        if (strcmp(current->data.nombreUsuario, nombreUsuario) == 0) {
             return current; // Se encontró el usuario
         }
         current = current->next;
@@ -115,4 +115,18 @@ struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
     return NULL; // No se encontró el usuario
 }
 
-
+void cargar_usuarios (struct Node* head) {
+    struct Node* current = head;
+    while (current != NULL) {
+        printf ("Nombre del Usuario/a : %s\n", current -> data.nombreUsuario);
+        printf ("Edad : %d\n", current -> data.edad);
+        printf ("Correo electrónico : %s\n", current -> data.correoElectronico);
+        printf ("Ubicación : %s\n", current -> data.ubicacion);
+        printf ("Gustos : %s\n", current -> data.gustos);
+        for (int i = 0; i < MAX_INTERESTS, i++){
+            printf (" - %s", current -> data.gustos[i]);
+        }
+        printf ("\n");
+        current = current->next;
+    }
+}

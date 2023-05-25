@@ -12,7 +12,9 @@ void menuUsuario();
 
 // Función que muestra el menú principal
 void mostrarMenuPrincipal() {
-    setlocale(LC_ALL, "es_ES"); int opcion;  //para se impriman los acentos al ejecutar el programa
+    setlocale(LC_ALL, "es_ES");   //para se impriman los acentos al ejecutar el programa  (no funciona)
+
+    int opcion;
 
     do {
        printf("=== Menú Principal ===\n");

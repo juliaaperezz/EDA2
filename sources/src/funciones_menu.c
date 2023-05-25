@@ -1,20 +1,14 @@
-//
-// Created by julia on 09/05/2023.
-//
-
-#include "../headers/funciones_menu.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include "usuario.c"
-#include "user_linked.c"
+#include "../headers/funciones_menu.h"
+#include "../headers/user_linked.h"
 #include "../headers/usuario.h"
-#include "menu.c"
-
 
 
 // Declaración de funciones
+void mostrarMenuPrincipal();
 void insertarUsuario();
 void listarUsuarios();
 void enviarSolicitudAmistad();
@@ -23,10 +17,11 @@ void realizarPublicacion();
 void listarPublicaciones();
 void volverAlMenuPrincipal();
 int es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado);
-void agregar_solicitud_pendiente(Usuario* usuariobuscado,Solicitudes* solicitud);
+void agregar_solicitud_pendiente(Usuario* usuariobuscado,Usuario* solicitud);
 void crear_solicitud_amistad(Usuario* usuarioactual, Usuario* usuariobuscado);
 
 
+/*
 
 void insertarUsuario() {
     printf("Opción 'Insertar un nuevo usuario' seleccionada.\n");
@@ -73,16 +68,16 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Node* usuarioActual) {
     printf("Solicitud de amistad enviada a %s.\n", nodoAmigo->data->nombreUsuario);
 
 }
+*/
 
-
-
-i es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado){
+/*
+ int es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado){
     if (buscar_usuario(usuarioactual, usuariobuscado->nombreUsuario) == NULL){
         printf("Este ususario y tu ya sois amigos");
         return TRUE;
     }
     else return FALSE;
-}
+}*/
 
 void solicitud_pendiente(Usuario* usuarioactual,Usuario* usuariobuscado){
 
@@ -91,10 +86,10 @@ void solicitud_pendiente(Usuario* usuarioactual,Usuario* usuariobuscado){
 void crear_solicitud_amistad(Usuario* usuarioactual, Usuario* usuariobuscado){
 
 }
-
+/*
 void agregar_solicitud_pendiente(Usuario* usuariobuscado,Solicitudes* solicitud){
 
-}
+}*/
 
 void gestionarSolicitudesPendientes() {
     printf("Opción 'Gestionar las solicitudes pendientes' seleccionada.\n");

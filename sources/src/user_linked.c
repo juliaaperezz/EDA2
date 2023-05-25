@@ -1,8 +1,3 @@
-//
-// Created by julia on 09/05/2023.
-//
-
-#include "../headers/user_linked.h"
 #include "../headers/funciones_menu.h"
 #include "../headers/usuario.h"
 #include <stdio.h>
@@ -25,7 +20,7 @@ void addUsuario(struct Node **head, Usuario* usuario){
     newNode = (struct Node*) malloc(sizeof(struct Node));
 
     //assign data to newNode
-    newNode->data = data;
+    newNode->data = *usuario;
 
     //assign NULL to next of newNode
     newNode->next = NULL;

@@ -1,33 +1,21 @@
-//
-// Created by julia on 09/05/2023.
-//
-
-#include "../headers/menu.h"
-
-//
-// Created by julia on 09/05/2023.
-//
-
 #include <stdio.h>
-#include "funciones_menu.c"
-#include "usuario.c"
-#include "user_linked.c"
+#include "../headers/main.h"
 #include "../headers/funciones_menu.h"
 #include "../headers/usuario.h"
 
+#include <locale.h>   //para que se imprima bien los strings ue contienen acentos, etc.
 
 // Declaración de funciones
 void mostrarMenuPrincipal();
 void menuUsuario();
 
 
-
 // Función que muestra el menú principal
 void mostrarMenuPrincipal() {
-    int opcion;
+    setlocale(LC_ALL, "es_ES"); int opcion;  //para se impriman los acentos al ejecutar el programa
 
     do {
-        printf("=== Menú Principal ===\n");
+       printf("=== Menú Principal ===\n");
         printf("1. Insertar un nuevo usuario\n");
         printf("2. Listar todos los usuarios existentes\n");
         printf("3. Operar como un usuario específico\n");
@@ -36,17 +24,17 @@ void mostrarMenuPrincipal() {
         scanf("%d", &opcion);
 
         if (opcion == 1){
-            insertarUsuario();
+            //insertarUsuario();
             mostrarMenuPrincipal();
         }
 
         else if (opcion == 2){
-            listarUsuarios();
+            //listarUsuarios();
             mostrarMenuPrincipal();
         }
 
         else if (opcion == 3){
-            menuUsuario();
+            //menuUsuario();
             mostrarMenuPrincipal();
         }
         else if (opcion == 4)
@@ -73,19 +61,19 @@ void menuUsuario() {
         scanf("%d", &opcion);
 
         if (opcion == 1){
-            enviarSolicitudAmistad();
+            //enviarSolicitudAmistad();
             menuUsuario();
         }else if (opcion == 2){
-            gestionarSolicitudesPendientes();
+            //gestionarSolicitudesPendientes();
             menuUsuario();
         }else if (opcion == 3){
-            realizarPublicacion();
+            //realizarPublicacion();
             menuUsuario();
         }else if (opcion == 4){
-            listarPublicaciones();
+            //listarPublicaciones();
             menuUsuario();
         }else if (opcion == 5){
-            volverAlMenuPrincipal();
+            mostrarMenuPrincipal();
         }
         else
             printf("Opción inválida. Por favor, ingrese una opción válida.\n");

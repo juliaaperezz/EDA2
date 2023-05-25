@@ -1,2 +1,11 @@
 # ninja log v5
-6	391	7054080146197607	build.ninja	3418d3560eb01101
+6	391	7067114293612936	build.ninja	3418d3560eb01101
+1	220	7067114293612936	build.ninja	ba42177083b28ca4
+1	353	7067114297361660	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
+31	405	7067114297513814	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
+15	413	7067114297634455	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
+70	449	7067114298417124	CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj	1ffe936c9de5b634
+50	450	7067114298427157	CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj	1ba85656f39cba01
+451	718	7067114300984583	EDA2_proyecto.exe	d11ac906e308eeda
+3	281	7067123625721642	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
+281	502	7067123627837790	EDA2_proyecto.exe	d11ac906e308eeda

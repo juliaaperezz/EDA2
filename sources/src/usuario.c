@@ -1,21 +1,16 @@
-//
-// Created by julia on 09/05/2023.
-//
-
-#include "../headers/usuario.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "../headers/funciones_menu.h"
 #include "../headers/menu.h"
-#include "menu.c"
-#include "main.c"
 #include "../headers/usuario.h"
 
 // (Interfaz usuario)
 // Declaración de funciones
 Usuario* llenarDatosUsuario();
 void mostrarDatosUsuario(Usuario *usuario);
+struct Node* buscar_usuario(struct Node *head, char *nombreUsuario);
+void cargar_usuarios (struct Node* head);
 
 
 // menú que no hará falta
@@ -102,6 +97,7 @@ void mostrarDatosUsuario(Usuario* usuario) {
         printf("%s\n", usuario->gustos[i]);
     }
 }
+/*
 
 // Función para buscar una persona por su usuario
 struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
@@ -118,15 +114,17 @@ struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
 void cargar_usuarios (struct Node* head) {
     struct Node* current = head;
     while (current != NULL) {
-        printf ("Nombre del Usuario/a : %s\n", current -> data.nombreUsuario);
-        printf ("Edad : %d\n", current -> data.edad);
-        printf ("Correo electrónico : %s\n", current -> data.correoElectronico);
-        printf ("Ubicación : %s\n", current -> data.ubicacion);
-        printf ("Gustos : %s\n", current -> data.gustos);
-        for (int i = 0; i < MAX_INTERESTS, i++){
+        printf ("Nombre del Usuario/a : %s\n", current->data.nombreUsuario);
+        printf ("Edad : %d\n", current->data.edad);
+        printf ("Correo electrónico : %s\n", current->data.correoElectronico);
+        printf ("Ubicación : %s\n", current->data.ubicacion);
+        printf ("Gustos : %s\n", current->data.gustos);
+
+        for (int i = 0; i < MAX_INTERESTS, i++) {
             printf (" - %s", current -> data.gustos[i]);
         }
         printf ("\n");
         current = current->next;
     }
 }
+*/

@@ -2,6 +2,7 @@
 #include "../headers/main.h"
 #include "../headers/funciones_menu.h"
 #include "../headers/usuario.h"
+#include "../headers/user_linked.h"
 
 #include <locale.h>   //para que se imprima bien los strings ue contienen acentos, etc.
 #include <stdlib.h>
@@ -20,6 +21,7 @@ void mostrarMenuPrincipal() {
 
     int opcion;
 
+
     do { // cambiar esto por un switch, que? ahora mismo es un if-elseif
        printf("=== Menu Principal ===\n");
         printf("1. Insertar un nuevo usuario\n");
@@ -35,8 +37,8 @@ void mostrarMenuPrincipal() {
         }
 
         else if (opcion == 2){
-            //listarUsuarios();
-            mostrarMenuPrincipal();
+            listarUsuarios(&head);
+            printf("DEBUG: Listando usuarios\n");   //debug
         }
 
         else if (opcion == 3){

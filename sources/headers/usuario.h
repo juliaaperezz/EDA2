@@ -5,17 +5,21 @@
 #ifndef EDA2_PROYECTO_USUARIO_H
 #define EDA2_PROYECTO_USUARIO_H
 
-#endif //EDA2_PROYECTO_USUARIO_H
-
 #define MAX_INTERESTS 5
-#define MAX_LENGHT 100
+#define MAX_LENGTH 100
 #define MAX_USUARIOS 100
 
 // Definición del typedef para el usuario
 typedef struct {
-    char nombreUsuario[MAX_LENGHT];
+    char nombreUsuario[MAX_LENGTH];
     int  edad;
-    char correoElectronico[MAX_LENGHT];
-    char ubicacion[MAX_LENGHT];
-    int gustos[MAX_INTERESTS][MAX_LENGHT];
+    char correoElectronico[MAX_LENGTH];
+    char ubicacion[MAX_LENGTH];
+    int gustos[MAX_INTERESTS];
 } Usuario;
+
+// definicion de funciones
+
+
+#endif //EDA2_PROYECTO_USUARIO_H
+

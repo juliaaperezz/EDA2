@@ -10,10 +10,10 @@
 // Declaración de funciones
 void mostrarMenuPrincipal();
 void insertarUsuario();
+void realizarPublicacion();
 void listarUsuarios();
 void enviarSolicitudAmistad();
 void gestionarSolicitudesPendientes();
-void realizarPublicacion();
 void listarPublicaciones();
 void volverAlMenuPrincipal();
 int es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado);

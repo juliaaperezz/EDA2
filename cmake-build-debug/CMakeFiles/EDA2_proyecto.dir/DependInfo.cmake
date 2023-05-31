@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/funciones_menu.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj.d"
-  "C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/main.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj.d"
-  "C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/menu.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj.d"
-  "C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/user_linked.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj.d"
-  "C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/usuario.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj.d"
+  "C:/Users/dipti/Documents/GitHub/EDA2/sources/src/funciones_menu.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj.d"
+  "C:/Users/dipti/Documents/GitHub/EDA2/sources/src/main.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj.d"
+  "C:/Users/dipti/Documents/GitHub/EDA2/sources/src/menu.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj.d"
+  "C:/Users/dipti/Documents/GitHub/EDA2/sources/src/user_linked.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj.d"
+  "C:/Users/dipti/Documents/GitHub/EDA2/sources/src/usuario.c" "CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj" "gcc" "CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj.d"
   )
 
 # Targets to which this target links.

@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\isaac\CLionProjects\EDA2Proyecto
+CMAKE_SOURCE_DIR = C:\Users\dipti\Documents\GitHub\EDA2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/EDA2_proyecto.dir/depend.make
@@ -68,75 +68,109 @@ include CMakeFiles/EDA2_proyecto.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EDA2_proyecto.dir/flags.make
 
+<<<<<<< Updated upstream
 CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
-CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/funciones_menu.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/funciones_menu.c
 CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.obj -c C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\funciones_menu.c
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\funciones_menu.c > CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.i
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\funciones_menu.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.s
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
-CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj: C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/user_linked.c
-CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.obj -c C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\user_linked.c
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\user_linked.c > CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.i
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\user_linked.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.s
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
-CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/menu.c
-CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.obj -c C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\menu.c
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\menu.c > CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.i
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\menu.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.s
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
-CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/usuario.c
-CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.obj -c C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\usuario.c
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\usuario.c > CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.i
-
-CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\usuario.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.s
-
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj"
+=======
 CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
-CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/main.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/main.c
 CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj -c C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj -c C:\Users\dipti\Documents\GitHub\EDA2\sources\src\main.c
 
 CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\main.c > CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dipti\Documents\GitHub\EDA2\sources\src\main.c > CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.i
 
 CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\isaac\CLionProjects\EDA2Proyecto\sources\src\main.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dipti\Documents\GitHub\EDA2\sources\src\main.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.s
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
+CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/funciones_menu.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj"
+>>>>>>> Stashed changes
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.obj -c C:\Users\dipti\Documents\GitHub\EDA2\sources\src\funciones_menu.c
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dipti\Documents\GitHub\EDA2\sources\src\funciones_menu.c > CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.i
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dipti\Documents\GitHub\EDA2\sources\src\funciones_menu.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_menu.c.s
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
+CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/user_linked.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
+<<<<<<< Updated upstream
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj"
+>>>>>>> Stashed changes
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.obj -c C:\Users\dipti\Documents\GitHub\EDA2\sources\src\user_linked.c
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dipti\Documents\GitHub\EDA2\sources\src\user_linked.c > CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.i
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dipti\Documents\GitHub\EDA2\sources\src\user_linked.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\user_linked.c.s
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
+CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/menu.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
+<<<<<<< Updated upstream
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj"
+>>>>>>> Stashed changes
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.obj -c C:\Users\dipti\Documents\GitHub\EDA2\sources\src\menu.c
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dipti\Documents\GitHub\EDA2\sources\src\menu.c > CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.i
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dipti\Documents\GitHub\EDA2\sources\src\menu.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.s
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
+CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/usuario.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
+<<<<<<< Updated upstream
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj"
+>>>>>>> Stashed changes
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.obj -c C:\Users\dipti\Documents\GitHub\EDA2\sources\src\usuario.c
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dipti\Documents\GitHub\EDA2\sources\src\usuario.c > CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.i
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dipti\Documents\GitHub\EDA2\sources\src\usuario.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.s
+
+<<<<<<< Updated upstream
+CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: CMakeFiles/EDA2_proyecto.dir/flags.make
+CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: C:/Users/dipti/Documents/GitHub/EDA2/sources/src/main.c
+CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: CMakeFiles/EDA2_proyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj -MF CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj.d -o CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj -c C:\Users\dipti\Documents\GitHub\EDA2\sources\src\main.c
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dipti\Documents\GitHub\EDA2\sources\src\main.c > CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.i
+
+CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dipti\Documents\GitHub\EDA2\sources\src\main.c -o CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.s
 
 # Object files for target EDA2_proyecto
 EDA2_proyecto_OBJECTS = \
@@ -145,20 +179,36 @@ EDA2_proyecto_OBJECTS = \
 "CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj" \
 "CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj" \
 "CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj"
+=======
+# Object files for target EDA2_proyecto
+EDA2_proyecto_OBJECTS = \
+"CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj" \
+"CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj" \
+"CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj" \
+"CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj" \
+"CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj"
+>>>>>>> Stashed changes
 
 # External object files for target EDA2_proyecto
 EDA2_proyecto_EXTERNAL_OBJECTS =
 
+<<<<<<< Updated upstream
+=======
+EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj
+>>>>>>> Stashed changes
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj
+<<<<<<< Updated upstream
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj
+=======
+>>>>>>> Stashed changes
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/build.make
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/linklibs.rsp
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/objects1.rsp
 EDA2_proyecto.exe: CMakeFiles/EDA2_proyecto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable EDA2_proyecto.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable EDA2_proyecto.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDA2_proyecto.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -170,6 +220,6 @@ CMakeFiles/EDA2_proyecto.dir/clean:
 .PHONY : CMakeFiles/EDA2_proyecto.dir/clean
 
 CMakeFiles/EDA2_proyecto.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\isaac\CLionProjects\EDA2Proyecto C:\Users\isaac\CLionProjects\EDA2Proyecto C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug C:\Users\isaac\CLionProjects\EDA2Proyecto\cmake-build-debug\CMakeFiles\EDA2_proyecto.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dipti\Documents\GitHub\EDA2 C:\Users\dipti\Documents\GitHub\EDA2 C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug C:\Users\dipti\Documents\GitHub\EDA2\cmake-build-debug\CMakeFiles\EDA2_proyecto.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/EDA2_proyecto.dir/depend
 

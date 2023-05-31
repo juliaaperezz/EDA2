@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/universidad/EDA2_proyecto/cmake-build-debug",
-		"source" : "C:/universidad/EDA2_proyecto"
+		"build" : "C:/Users/dipti/Documents/GitHub/EDA2/cmake-build-debug",
+		"source" : "C:/Users/dipti/Documents/GitHub/EDA2"
 	},
 	"version" : 
 	{

@@ -79,12 +79,18 @@
 		<Unit filename="C:/Users/dipti/Documents/GitHub/EDA2/sources/headers/funciones_menu.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
+<<<<<<< Updated upstream
 		<Unit filename="C:/Users/dipti/Documents/GitHub/EDA2/sources/headers/main.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
 		<Unit filename="C:/Users/dipti/Documents/GitHub/EDA2/sources/headers/menu.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
+=======
+		<Unit filename="C:/Users/dipti/Documents/GitHub/EDA2/sources/headers/menu.h">
+			<Option target="EDA2_proyecto"/>
+		</Unit>
+>>>>>>> Stashed changes
 		<Unit filename="C:/Users/dipti/Documents/GitHub/EDA2/sources/headers/user_linked.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>

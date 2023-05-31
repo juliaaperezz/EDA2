@@ -179,6 +179,7 @@ struct Node* buscarUsuario(struct Node *head, char *nombreUsuario){
     return NULL; // User not found
 }
 
+<<<<<<< Updated upstream
 /*
 void cargar_usuarios (struct Node* head) {
     struct Node* current = head;
@@ -197,3 +198,21 @@ void cargar_usuarios (struct Node* head) {
     }
 }
 */
+=======
+// Function to print the list of users
+void cargar_usuario (struct Node* head) {
+    struct Node* current = head;
+    while (current != NULL) {
+        printf("Nombre de usuario: %s\n", current->data.nombreUsuario);
+        printf("Edad: %d\n", current->data.edad);
+        printf("Correo electrónico: %s\n", current->data.correoElectronico);
+        printf("Ubicación: %s\n", current->data.ubicacion);
+        printf("Gustos:\n");
+        for (int i = 0; i < MAX_INTERESTS; i++) {
+            printf("- %s\n", current->data.gustos[i]);
+        }
+        printf("\n");
+        current = current->next;
+    }
+}
+>>>>>>> Stashed changes

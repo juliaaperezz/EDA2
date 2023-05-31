@@ -9,69 +9,11 @@
 
 // (Interfaz usuario)
 // Declaración de funciones
+void menuUsuario(struct Node *usuario);
 void llenarDatosUsuario(struct Node* head);
-void mostrarDatosUsuario(Usuario *usuario);
 struct Node* buscarUsuario(struct Node *head, char *nombreUsuario);
-void cargar_usuarios (struct Node* head);
+void cargarUsuariosDesdeArchivo(struct Node** head, const char* nombreArchivo);
 
-
-
-// menú que no hará falta
-/*
-int menu_interfaz_usuario() {  //
-    Usuario usuarios[MAX_USUARIOS];
-    int numUsuarios = 0;
-
-    int opcion;
-
-    do {
-        printf("=== Interfaz ===\n");
-        printf("1. Agregar usuario\n");
-        printf("2. Mostrar usuarios\n");
-        printf("3. Buscar usuario\n");
-        printf("4. Salir\n");
-        printf("Ingrese su opción: ");
-        scanf("%d", &opcion);
-
-        switch (opcion) {
-            case 1:
-                if (numUsuarios < MAX_USUARIOS) {
-                    llenarDatosUsuario(&usuarios[numUsuarios]);
-                    numUsuarios++;
-                    printf("Usuario agregado correctamente.\n");
-                } else {
-                    printf("No se pueden agregar más usuarios. Límite alcanzado.\n");
-                }
-                break;
-            case 2:
-                printf("=== Usuarios registrados ===\n");
-                for (int i = 0; i < numUsuarios; i++) {
-                    mostrarDatosUsuario(&usuarios[i]);
-                    printf("\n");
-                }
-                break;
-            case 3:
-                printf("Ingrese el nombre de usuario: ");
-                char nombreUsuario[100];
-                scanf("%s", nombreUsuario);
-                Usuario* usuario =
-                if (usuario != NULL) {
-                    mostrarDatosUsuario(usuario);
-                } else {
-                    printf("Usuario no encontrado.\n");
-                }
-                break;
-            case 4:
-                printf("Terminando ejecución...\n");
-                break;
-            default:
-                printf("Opción inválida. Por favor, ingrese una opción válida.\n");
-                break;
-        }
-    } while (opcion != 3);
-
-    return 0;
-}*/
 
 void menuUsuario(struct Node *usuario) {
     int opcion;
@@ -113,10 +55,11 @@ void llenarDatosUsuario(struct Node* head) {
 
     printf("Ingrese el nombre de usuario: ");
     scanf("%s", useradd->nombreUsuario);
-   // if (buscarUsuario(head, usuario->nombreUsuario) != NULL) {
-  //      printf("El nombre de usuario ya existe. Por favor, ingrese otro nombre de usuario.\n");
-  //      return NULL;
-   // }
+    if (buscarUsuario(head, usuario->nombreusuario) != NULL) {
+        printf("El nombre de usuario ya existe. Por favor, ingrese otro nombre de usuario.\n");
+    }
+        return NULL;
+
     printf("Ingrese su edad: ");
     scanf("%d", &(useradd->edad));
 
@@ -150,7 +93,7 @@ void llenarDatosUsuario(struct Node* head) {
 }
 
 // Función para mostrar los datos de un usuario
-void mostrarDatosUsuario(Usuario* usuario) {
+void mostrarDatosUsuario(Usuario* usuario){
     printf("Nombre de usuario: %s\n", usuario->nombreUsuario);
     printf("Edad: %d\n", usuario->edad);
     printf("Correo electrónico: %s\n", usuario->correoElectronico);
@@ -179,40 +122,34 @@ struct Node* buscarUsuario(struct Node *head, char *nombreUsuario){
     return NULL; // User not found
 }
 
-<<<<<<< Updated upstream
-/*
-void cargar_usuarios (struct Node* head) {
-    struct Node* current = head;
-    while (current != NULL) {
-        printf ("Nombre del Usuario/a : %s\n", current->data.nombreUsuario);
-        printf ("Edad : %d\n", current->data.edad);
-        printf ("Correo electrónico : %s\n", current->data.correoElectronico);
-        printf ("Ubicación : %s\n", current->data.ubicacion);
-        printf ("Gustos : %s\n", current->data.gustos);
+void cargarUsuariosDesdeArchivo(struct Node** head, const char* nombreArchivo){
+    FILE* archivo = fopen("InfUsuarios.txt", "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        return;
+    }
 
-        for (int i = 0; i < MAX_INTERESTS, i++) {
-            printf (" - %s", current -> data.gustos[i]);
-        }
-        printf ("\n");
-        current = current->next;
-    }
-}
-*/
-=======
-// Function to print the list of users
-void cargar_usuario (struct Node* head) {
-    struct Node* current = head;
-    while (current != NULL) {
-        printf("Nombre de usuario: %s\n", current->data.nombreUsuario);
-        printf("Edad: %d\n", current->data.edad);
-        printf("Correo electrónico: %s\n", current->data.correoElectronico);
-        printf("Ubicación: %s\n", current->data.ubicacion);
-        printf("Gustos:\n");
+    char buffer[MAX_LENGTH];
+    while (fgets(buffer, sizeof(buffer), archivo)) {
+        // Eliminar el carácter de nueva línea del final
+        buffer[strcspn(buffer, "\n")] = '\0';
+
+        Usuario usuario;
+
+        // Leer los datos del usuario desde el archivo
+        strncpy(usuario.nombreUsuario, buffer, MAX_LENGTH);
+        fgets(buffer, sizeof(buffer), archivo);
+        usuario.edad = atoi(buffer);
+        fgets(usuario.correoElectronico, sizeof(usuario.correoElectronico), archivo);
+        fgets(usuario.ubicacion, sizeof(usuario.ubicacion), archivo);
         for (int i = 0; i < MAX_INTERESTS; i++) {
-            printf("- %s\n", current->data.gustos[i]);
+            fgets(buffer, sizeof(buffer), archivo);
+            usuario.gustos[i] = atoi(buffer);
         }
-        printf("\n");
-        current = current->next;
+
+        // Agregar el usuario a la lista
+        addUsuario(head, &usuario);
     }
+
+    fclose(archivo);
 }
->>>>>>> Stashed changes

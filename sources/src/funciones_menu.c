@@ -5,6 +5,7 @@
 #include "../headers/funciones_menu.h"
 #include "../headers/user_linked.h"
 #include "../headers/usuario.h"
+#include "../src/usuario.c"
 
 
 // Declaración de funciones
@@ -19,9 +20,9 @@ void volverAlMenuPrincipal();
 int es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado);
 void agregar_solicitud_pendiente(Usuario* usuariobuscado,Usuario* solicitud);
 void crear_solicitud_amistad(Usuario* usuarioactual, Usuario* usuariobuscado);
+void solicitud_pendiente(Usuario* usuarioactual,Usuario* usuariobuscado);
 
 
-/*
 
 void insertarUsuario() {
     printf("Opción 'Insertar un nuevo usuario' seleccionada.\n");
@@ -68,16 +69,16 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Node* usuarioActual) {
     printf("Solicitud de amistad enviada a %s.\n", nodoAmigo->data->nombreUsuario);
 
 }
-*/
 
-/*
+
+
  int es_amigo(Usuario* usuarioactual,Usuario* usuariobuscado){
     if (buscar_usuario(usuarioactual, usuariobuscado->nombreUsuario) == NULL){
         printf("Este ususario y tu ya sois amigos");
         return TRUE;
     }
     else return FALSE;
-}*/
+}
 
 void solicitud_pendiente(Usuario* usuarioactual,Usuario* usuariobuscado){
 

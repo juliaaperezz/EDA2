@@ -10,57 +10,42 @@
 
 
 //insert a newNode at the end of the list
-void addUsuario(struct Node **head, Usuario* user){
-    //allocate memory for node
-    struct Node *newNode = NULL;
-    newNode = (struct Node*) malloc(sizeof(struct Node));
+void addUsuario(struct Node **head, Usuario* user) {
+    // Allocate memory for newNode
+    struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
 
-    //assign data to newNode
+    // Assign data to newNode
     newNode->data = *user;
 
-    //assign NULL to next of newNode
+    // Assign NULL to next of newNode
     newNode->next = NULL;
 
-    //store the head node temporarily (for later use)
-    struct Node temp = **head;
-
-    //if the linkedlist is empty, make the newNode as head node
-    if(head == NULL){
+    // If the linked list is empty, make newNode as the head node
+    if (*head == NULL) {
         newNode->prev = NULL;
         *head = newNode;
         return;
     }
 
-    //if the linked list is not empty transverse to the end of the linkedlist
-    while(temp.next != NULL)
+    // Traverse to the end of the linked list
+    struct Node* current = *head;
+    while (current->next != NULL)
+        current = current->next;
 
-        temp = *temp.next;
+    // Point the next of the last node to newNode
+    current->next = newNode;
 
-    //point the next of the last node (temp) to newNode
-    temp.next = newNode;
-
-    //assign prev of newNode to temp
-    newNode->prev = &temp;
-
-    //debug
-    printf("DEBUG: add user D2\n");
-    //print data from head
-    printf("user added is %s\n", (*head)->data.nombreUsuario);
-
-    printf("user age is %d\n", (*head)->data.edad);
-
-
-
-
+    // Assign prev of newNode to current
+    newNode->prev = current;
 }
 
-
-void listarUsuarios(struct Node *head){
+void listarUsuarios(struct Node* head) {
     int counter = 1;
     struct Node* current = head;
-    while(current != NULL){
-        printf("%d. %s \n", counter, current->data.nombreUsuario);
+    while (current != NULL) {
+        printf("%d. %s\n", counter, current->data.nombreUsuario);
         current = current->next;
         counter++;
     }
 }
+

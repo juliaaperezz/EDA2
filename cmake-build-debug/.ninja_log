@@ -1,12 +1,14 @@
 # ninja log v5
-1	220	7067128318326166	build.ninja	ba42177083b28ca4
-31	405	7067114297513814	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
-3	281	7067123625721642	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
-15	413	7067114297634455	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
-70	449	7067114298417124	CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj	1ffe936c9de5b634
-50	450	7067114298427157	CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj	1ba85656f39cba01
-281	502	7067123627837790	EDA2_proyecto.exe	d11ac906e308eeda
-6	605	7067128630651817	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
-606	1118	7067128636730276	EDA2_proyecto.exe	d11ac906e308eeda
-5	389	7067309771267760	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
-390	710	7067309774400565	EDA2_proyecto.exe	d11ac906e308eeda
+242	867	7073132512002447	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
+2	378	7073181004617561	build.ninja	ba42177083b28ca4
+4	285	7073133742289277	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
+224	924	7073132512615730	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
+19	897	7073132512314924	CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_menu.c.obj	1ffe936c9de5b634
+207	865	7073132511992447	CMakeFiles/EDA2_proyecto.dir/sources/src/user_linked.c.obj	1ba85656f39cba01
+285	559	7073133744851856	EDA2_proyecto.exe	d11ac906e308eeda
+1	23	0	clean	25f4852878c63c34
+30	373	7073181050111286	CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_especificas_submenu.c.obj	1c3d48e720d31df6
+22	382	7073181050236487	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
+4	383	7073181050206481	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
+13	410	7073181050532435	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
+411	674	7073181053055261	EDA2_proyecto.exe	cfe556de6fcfd2a0

@@ -1,24 +1,23 @@
+
 #include <stdio.h>
 
 #include "../headers/usuario.h"
-#include "../headers/funciones_menu.h"
-#include "../headers/user_linked.h"
-#include "../src/usuario.c"
+#include "../headers/menu.h"
+#include "../headers/funciones submenu.h"
 
 void mostrarMenuPrincipal();
+void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
+
 
 // Función principal
 int main() {
+    printf("Bienvenido a BookTune! :)\n");
+    // creamos lista de usuarios
+    struct Node* listaUsuarios = NULL;
+    //cargar archivo
+    cargarUsuariosDesdeArchivo(&listaUsuarios, "usuarios.csv");
 
-    struct Node* head = NULL;
-
-    // Cargar usuarios desde el archivo
-    cargarUsuariosDesdeArchivo(&head, "InfUsuarios.txt");
-
-    // Imprimir la lista de usuarios
-    listarUsuarios(head);
-
+    //mostramos el menú
     mostrarMenuPrincipal();
     return 0;
 }
-

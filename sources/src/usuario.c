@@ -45,10 +45,7 @@ Usuario* llenarDatosUsuario() {
     printf("Ingrese su ubicacion: ");
     scanf("%s", usuario->ubicacion);
 
-    printf("De la siguiente lista ingrese sus 5 gustos o preferencias:\n");
-    printf("(escriba el número asociado a su preferencia y pulse enter)\n");
-    printf("[1- Música clásica \n2- Jazz \n3- Rock \n4- Pop \n5- Rap \n6- Reggae\n7- Reggaeton\n8- Dembow\n9- Techno\n10- Trap\n");
-    printf("11- Libros de Aventura\n12- Libros de Ciencia-Ficción\n13- Libros de Romance\n14- Libros Policíaco\n15- Libros de Terror\n16- Libros de Humor\n17- Libros de Poesía\n18- Libros de Fantasía\n19- Libros de Teatro\n20- Libros de Historia]\n");
+    printf("Ingrese sus 5 gustos o preferencias:\n");
     for (int i = 0; i < 5; i++) {
         printf("Gusto: %d", i+1);
         scanf("%s", usuario->gustos[i]);

@@ -1,9 +1,10 @@
 
 #include <stdio.h>
 
-#include "../headers/usuario.h"
 #include "../headers/menu.h"
+#include "../headers/usuario.h"
 #include "../headers/funciones submenu.h"
+#include "../headers/main.h"
 
 void mostrarMenuPrincipal();
 void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
@@ -14,8 +15,6 @@ int main() {
     printf("Bienvenido a BookTune! :)\n");
     // creamos lista de usuarios
     struct Node* listaUsuarios = NULL;
-    //cargar archivo
-    cargarUsuariosDesdeArchivo(&listaUsuarios, "usuarios.csv");
 
     //mostramos el menú
     mostrarMenuPrincipal();

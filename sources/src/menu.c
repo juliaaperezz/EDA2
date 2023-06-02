@@ -1,21 +1,22 @@
 #include <stdio.h>
-#include "../headers/main.h"
+#include "../headers/menu.h"
 #include "../headers/usuario.h"
-
+#include "../headers/funciones submenu.h"
+#include "../headers/main.h"
 
 
 // Declaración de funciones
 void mostrarMenuPrincipal();   //CORRECTA
 void menuUsuario(Usuario* usuario);  //CORRECTA
-Usuario* llenarDatosUsuario();   //CORRECTA
+void llenarDatosUsuario(Usuario* usuario);   //CORRECTA
 void listarUsuarios(Node* lista); //CORRECTA
 void agregarUsuario(Node** lista,  Usuario usuario); //CORRECTA
 struct Node* listaUsuarios;  //CORRECTA
 Usuario* buscarUsuario(Node* lista, char* nombreUsuario);  //CORRECTA
-char nombreUsuarioAmigo[50];
+//char nombreUsuarioAmigo[50];
 
 void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreUsuarioAmigo);
-
+void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
 
 
 
@@ -38,11 +39,11 @@ void mostrarMenuPrincipal() {
                 printf("Opcion 'Insertar un nuevo usuario' seleccionada.\n");
 
                 //crea un nuevo usuario
-                Usuario nuevoUsuario;
+                Usuario* nuevoUsuario = NULL;
                 //le pide los datos
                 llenarDatosUsuario(&nuevoUsuario);
                 //agrega el usuario a nuestra lista dinamica listaUsuarios
-                agregarUsuario(&listaUsuarios, nuevoUsuario);
+                agregarUsuario(&listaUsuarios, *nuevoUsuario);
 
                 // volvemos a mostrar el menú principal
                 mostrarMenuPrincipal();
@@ -79,6 +80,10 @@ void mostrarMenuPrincipal() {
 
             case 4:
                 printf("Opcion 'Cargar datos usuario desde CSV' seleccionada.\n");
+
+                //cargaramos el archivo
+                cargarUsuariosDesdeArchivo(&listaUsuarios, "usuarios.csv");
+                mostrarMenuPrincipal();
                 break;
 
             case 5:
@@ -111,11 +116,11 @@ void menuUsuario(Usuario* usuario) {
         switch(opcion) {
 
             case 1:
-                char nombreUsuarioAmigo[MAX_LENGHT];
+                /*char nombreUsuarioAmigo[MAX_LENGHT];
                 printf("Ingrese el nombre de usuario del amigo: ");
                 scanf("%s", nombreUsuarioAmigo);
 
-                enviarSolicitudAmistad(listaUsuarios, usuario, nombreUsuarioAmigo);
+                enviarSolicitudAmistad(listaUsuarios, usuario, nombreUsuarioAmigo);*/
                 menuUsuario(usuario);
                 break;
 

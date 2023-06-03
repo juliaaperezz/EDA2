@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "EDA2_proyecto.exe"
-		},
-		{
-			"path" : "EDA2_proyecto.pdb"
+			"path" : "EDA2_proyecto"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -fcolor-diagnostics"
 				},
 				{
 					"fragment" : "-std=gnu11"
@@ -74,16 +71,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
 	"name" : "EDA2_proyecto",
-	"nameOnDisk" : "EDA2_proyecto.exe",
+	"nameOnDisk" : "EDA2_proyecto",
 	"paths" : 
 	{
 		"build" : ".",

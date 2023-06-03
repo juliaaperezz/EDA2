@@ -8,105 +8,99 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug"/>
+				<Option working_dir="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EDA2_proyecto">
-				<Option output="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/EDA2_proyecto.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug"/>
+				<Option output="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/EDA2_proyecto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 EDA2_proyecto"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 EDA2_proyecto"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="EDA2_proyecto/fast">
-				<Option output="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/EDA2_proyecto.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug"/>
+				<Option output="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/EDA2_proyecto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 EDA2_proyecto/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 EDA2_proyecto/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug"/>
+				<Option working_dir="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug"/>
+				<Option working_dir="/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/isaac/CLionProjects/EDA2Proyecto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/headers/funciones_menu.h">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/headers/funciones submenu.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/headers/main.h">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/headers/main.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/headers/menu.h">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/headers/menu.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/headers/user_linked.h">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/headers/usuario.h">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/headers/usuario.h">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/funciones submenu.c">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/funciones_menu.c">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/main.c">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/main.c">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/menu.c">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/menu.c">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/usuario.c">
 			<Option target="EDA2_proyecto"/>
 		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/user_linked.c">
-			<Option target="EDA2_proyecto"/>
-		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/sources/src/usuario.c">
-			<Option target="EDA2_proyecto"/>
-		</Unit>
-		<Unit filename="C:/Users/isaac/CLionProjects/EDA2Proyecto/CMakeLists.txt">
+		<Unit filename="/Users/carlanunezvinas/Documents/GitHub/EDA2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

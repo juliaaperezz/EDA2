@@ -1,149 +1,122 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "../headers/menu.h"
 #include "../headers/usuario.h"
 #include "../headers/funciones submenu.h"
 #include "../headers/main.h"
 
-
-// Declaración de funciones
+// Declaración de funciones menú
 void mostrarMenuPrincipal();   //CORRECTA
-void menuUsuario(Usuario* usuario);  //CORRECTA
-void llenarDatosUsuario(Usuario* usuario);   //CORRECTA
-void listarUsuarios(Node* lista); //CORRECTA
+void insertarUsuario(Usuario usuarios[], int *contadorUsuarios);
+void listarUsuarios(Usuario usuarios[], int contadorUsuarios);
+
+// Declaración de funciones submenú
+void submenuUsuario(Usuario usuarios[], int contadorUsuarios);
+void enviarSolicitudAmistad(Usuario usuarios[], int contadorUsuarios, int indiceUsuario);
+void gestionarSolicitudesPendientes();
+void realizarPublicacion(int indiceUsuario);
+void listarPublicaciones(Usuario usuarios[], int contadorUsuarios, int indiceUsuario);
+
+//_____________________________
 void agregarUsuario(Node** lista,  Usuario usuario); //CORRECTA
 struct Node* listaUsuarios;  //CORRECTA
 Usuario* buscarUsuario(Node* lista, char* nombreUsuario);  //CORRECTA
 //char nombreUsuarioAmigo[50];
 
-void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreUsuarioAmigo);
 void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
 
 
 
 // Función que muestra el menú principal
 void mostrarMenuPrincipal() {
+    Usuario usuarios[100];
+    int contadorUsuarios = 0;
     int opcion;
 
     do {
-       printf("=== Menu Principal ===\n");
+        printf("\n--- Menú Principal ---\n");
         printf("1. Insertar un nuevo usuario\n");
         printf("2. Listar todos los usuarios existentes\n");
-        printf("3. Operar como un usuario especifico\n");
-        printf("4. Cargar datos usuario desde CSV\n");
-        printf("5. Salir \n");
-        printf("Ingrese su opcion: ");
+        printf("3. Operar como un usuario específico\n");
+        printf("4. Salir (Terminar ejecución)\n");
+        printf("Ingrese una opción: ");
         scanf("%d", &opcion);
 
-        switch(opcion){
+        switch (opcion) {
             case 1:
-                printf("Opcion 'Insertar un nuevo usuario' seleccionada.\n");
-
-                //crea un nuevo usuario
-                Usuario* nuevoUsuario = NULL;
-                //le pide los datos
-                llenarDatosUsuario(&nuevoUsuario);
-                //agrega el usuario a nuestra lista dinamica listaUsuarios
-                agregarUsuario(&listaUsuarios, *nuevoUsuario);
-
-                // volvemos a mostrar el menú principal
-                mostrarMenuPrincipal();
+                insertarUsuario(usuarios, &contadorUsuarios);
                 break;
-
             case 2:
-                printf("Opcion 'Listar todos los usuarios existentes' seleccionada.\n");
-
-                //lista los usuarios existentes
-                listarUsuarios(listaUsuarios);
-                //volvemos a mostrar el menú principal
-                mostrarMenuPrincipal();
+                listarUsuarios(usuarios, contadorUsuarios);
                 break;
-
             case 3:
-                printf("Opcion 'Operar como un usuario especifico' seleccionada.\n");
-
-                //el usuario se registra
-                char nombreUsuario[MAX_LENGHT];
-                printf("Ingrese el nombre de usuario: ");
-                scanf("%s", nombreUsuario);
-
-                //utilizamos función buscar usuario para saber si existe, en el caso de que no se indicará
-                // y se imprime el menu principal otra vez
-                Usuario* usuarioEncontrado = buscarUsuario(listaUsuarios, nombreUsuario);
-                if (usuarioEncontrado != NULL) {
-                    menuUsuario(usuarioEncontrado);
-                } else {
-                    printf("No se encontro el usuario con el nombre especificado.\n");
-                    printf("Porfavor inserte nuevo usuario");
-                    mostrarMenuPrincipal();
-                }
+                submenuUsuario(usuarios, contadorUsuarios);
                 break;
-
             case 4:
-                printf("Opcion 'Cargar datos usuario desde CSV' seleccionada.\n");
-
-                //cargaramos el archivo
-                cargarUsuariosDesdeArchivo(&listaUsuarios, "usuarios.csv");
-                mostrarMenuPrincipal();
+                printf("Terminando ejecución del programa.\n");
                 break;
-
-            case 5:
-                printf("Saliendo...\n");
-                break;
-
             default:
-                printf("Opcion invalida. Por favor, ingrese una opcion valida.\n");
+                printf("Opción inválida. Intente nuevamente.\n");
                 break;
         }
-    } while (opcion != 5);
+    } while (opcion != 4);
+
+    //return 0;
 }
 
-
-
-//Función que muestra el menú del usuario
-void menuUsuario(Usuario* usuario) {
+void submenuUsuario(Usuario usuarios[], int contadorUsuarios) {
     int opcion;
+    char nombreUsuario[50];
+    printf("Ingrese el nombre del usuario: ");
+    scanf("%s", nombreUsuario);
+
+    int indiceUsuario = -1;
+    for (int i = 0; i < contadorUsuarios; i++) {
+        if (strcmp(nombreUsuario, usuarios[i].nombreUsuario) == 0) {
+            indiceUsuario = i;
+            break;
+        }
+    }
+
+    if (indiceUsuario == -1) {
+        printf("El usuario no existe.\n");
+        return;
+    }
 
     do {
-        printf("=== Menu Usuario ===\n");
-        printf("1. Enviar solicitudes de amistad\n");
-        printf("2. Gestionar las solicitudes pendientes\n");
-        printf("3. Realizar una publicacion\n");
-        printf("4. Listar las publicaciones del usuario seleccionado\n");
-        printf("5. Volver al menu principal\n");
-        printf("Ingrese su opcion: ");
+        printf("\n--- Submenú de usuario ---\n");
+        printf("1. Enviar solicitud de amistad\n");
+        printf("2. Gestionar solicitudes pendientes\n");
+        printf("3. Realizar una publicación\n");
+        printf("4. Listar las publicaciones del usuario\n");
+        printf("5. Volver al menú principal\n");
+        printf("Ingrese una opción: ");
         scanf("%d", &opcion);
 
-        switch(opcion) {
-
+        switch (opcion) {
             case 1:
-                /*char nombreUsuarioAmigo[MAX_LENGHT];
-                printf("Ingrese el nombre de usuario del amigo: ");
-                scanf("%s", nombreUsuarioAmigo);
-
-                enviarSolicitudAmistad(listaUsuarios, usuario, nombreUsuarioAmigo);*/
-                menuUsuario(usuario);
+                printf("Solicitud de amistad enviada.\n");
+                enviarSolicitudAmistad(usuarios, contadorUsuarios, indiceUsuario);
                 break;
-
             case 2:
                 //gestionarSolicitudesPendientes();
-                menuUsuario(usuario);
+                printf("Solicitudes pendientes gestionadas.\n");
                 break;
-
             case 3:
-                //realizarPublicacion();
-                menuUsuario(usuario);
+                realizarPublicacion(indiceUsuario);
+                printf("Publicación realizada.\n");
                 break;
-
             case 4:
-                //listarPublicaciones();
-                menuUsuario(usuario);
+                printf("Publicaciones del usuario:\n");
+                listarPublicaciones(usuarios, contadorUsuarios, indiceUsuario);
+                // Aquí puedes implementar la lógica para listar las publicaciones del usuario seleccionado
                 break;
             case 5:
-                mostrarMenuPrincipal();
+                printf("Volviendo al menú principal.\n");
                 break;
-
             default:
-                printf("Opcion invalida. Por favor, ingrese una opcion valida.\n");
+                printf("Opción inválida. Intente nuevamente.\n");
                 break;
         }
     } while (opcion != 5);

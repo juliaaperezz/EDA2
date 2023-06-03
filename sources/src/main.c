@@ -14,6 +14,7 @@ void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
 int main() {
     printf("Bienvenido a BookTune! :)\n");
     // creamos lista de usuarios
+
     struct Node* listaUsuarios = NULL;
 
     //mostramos el menú

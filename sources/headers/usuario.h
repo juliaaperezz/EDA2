@@ -8,7 +8,7 @@
 #endif //EDA2_PROYECTO_USUARIO_H
 
 #define MAX_INTERESTS 5
-#define MAX_LENGHT 100
+#define MAX_LENGHT 50
 #define MAX_USUARIOS 100
 
 // Definición del typedef para el usuario

@@ -1,5 +1,0 @@
-Alex123, 28, alex123@email.com, Nueva York, Estados Unidos, Practicar yoga,Leer novelas históricas, Ver películas de terror,Hacer caminatas en la naturaleza,Cocinar recetas vegetarianas
-LisaBlue, 25, lisablue@email.com, Toronto, Canadá, Hacer yoga, Leer libros de autoayuda, Ver documentales, Viajar a lugares naturales, Cocinar platillos étnicos
-MaxGreen, 32, maxgreen@email.com, Seattle, Estados Unidos, Hacer senderismo, Leer libros de negocios, Ver películas de acción, Escalar montañas, Cocinar platillos orgánicos
-SarahRose, 27, sarahrose@email.com, Londres, Reino Unido, Practicar pilates, Leer novelas románticas, Ver comedias, Ir de compras en tiendas vintage, Escuchar música de los años 80
-MarkBlack, 30, markblack@email.com, Los Ángeles, Estados Unidos, Hacer ejercicio, Leer libros de historia, Ver películas de ciencia ficción, Ir a conciertos de rock, Cocinar platillos picantes

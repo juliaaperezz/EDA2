@@ -3,10 +3,13 @@
 #include <string.h>
 #include "../headers/menu.h"
 #include "../headers/usuario.h"
+#include "../headers/funciones submenu.h"
+#include "../headers/main.h"
 
 
 //para primera opción menú
-Usuario* llenarDatosUsuario();  // CORRECTA
+void llenarDatosUsuario(Usuario* usuario);  // CORRECTA
+void limpiarBufferEntrada();
 void agregarUsuario(Node** lista,  Usuario usuario);  //CORRECTA
 
 //para segunda opción del menú
@@ -21,6 +24,7 @@ void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
 
 
 
+
 void mostrarDatosUsuario(Usuario *usuario);
 
 
@@ -29,29 +33,33 @@ void mostrarDatosUsuario(Usuario *usuario);
 // PRIMERA OPCIÓN DEL MENÚ: insertar nuevo usuario
 
     // Función para llenar los datos de un usuario
-Usuario* llenarDatosUsuario() {
-
-    Usuario* usuario;
+void llenarDatosUsuario(Usuario* usuario) {
+    char temp1[MAX_LENGHT];
+    int temp2;
 
     printf("Ingrese el nombre de usuario: ");
-    scanf("%s", usuario->nombreUsuario);
+    //scanf("%c",&temp1);
+    scanf("%[^\n]", temp1);  // %[^\n] para poder leer una string con espacios
+    //&usuario->nombreUsuario = temp1;
 
-    printf("Ingrese su edad: ");
-    scanf("%d", &(usuario->edad));
 
-    printf("Ingrese su direccion de correo electronico: ");
-    scanf("%s", usuario->correoElectronico);
+    printf("\nIngrese su edad: ");
+    scanf("%d", usuario->edad);
 
-    printf("Ingrese su ubicacion: ");
-    scanf("%s", usuario->ubicacion);
+    printf("\nIngrese su direccion de correo electronico: ");
+    scanf("%[^\n]", &usuario->correoElectronico);
 
-    printf("Ingrese sus 5 gustos o preferencias:\n");
+    printf("\nIngrese su ubicacion: ");
+    scanf("%[^\n]", &usuario->ubicacion);
+
+    printf("\nIngrese sus 5 gustos o preferencias:");
     for (int i = 0; i < 5; i++) {
-        printf("Gusto: %d", i+1);
-        scanf("%s", usuario->gustos[i]);
+        printf("\nGusto %d :", i+1);
+        scanf("%[^\n]", &usuario->gustos[i]);
     }
-    return usuario;
+
 }
+
 
     //estructura node en headers
     // Función que agrega los nuevos usuarios a la lista dinamica

@@ -67,8 +67,8 @@ build CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: C_COMPILER__EDA2_proy
   OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
   OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_especificas_submenu.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/funciones$ especificas$ submenu.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_especificas_submenu.c.obj.d
+build CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/funciones$ submenu.c || cmake_object_order_depends_target_EDA2_proyecto
+  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_submenu.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
   OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
   OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
@@ -81,7 +81,7 @@ build CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_especificas_submenu.c.o
 #############################################
 # Link the executable EDA2_proyecto.exe
 
-build EDA2_proyecto.exe: C_EXECUTABLE_LINKER__EDA2_proyecto_Debug CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_especificas_submenu.c.obj
+build EDA2_proyecto.exe: C_EXECUTABLE_LINKER__EDA2_proyecto_Debug CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir

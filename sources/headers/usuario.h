@@ -10,6 +10,7 @@
 #define MAX_INTERESTS 5
 #define MAX_LENGHT 50
 #define MAX_USUARIOS 100
+#define MAX_PUBLICACIONES 100
 
 // Definición del typedef para el usuario
 typedef struct {
@@ -20,13 +21,17 @@ typedef struct {
     char gustos[MAX_INTERESTS][MAX_LENGHT];
     struct NodoAmigo* amigos;
     struct NodoSolicitud* solicitudesAmistad;
+    struct NodoPublicacion* publicaciones; // Lista de publicaciones del usuario
 } Usuario;
 
+
+// Estructura para representar un amigo en la lista de amigos de un usuario
 typedef struct NodoAmigo {
     struct Usuario* usuario;
     struct NodoAmigo* next;
 } NodoAmigo;
 
+// Estructura para representar una solicitud de amistad en la lista de solicitudes pendientes de un usuario
 typedef struct NodoSolicitud {
     struct Usuario* usuario;
     struct NodoSolicitud* next;
@@ -40,3 +45,8 @@ typedef struct Node {
     struct Node* prev;
 } Node;
 
+
+typedef struct NodoPublicacion {
+    char contenido[MAX_LENGHT];
+    struct NodoPublicacion* siguiente;
+} NodoPublicacion;

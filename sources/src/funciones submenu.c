@@ -17,7 +17,7 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreU
 void agregarSolicitudAmistad(Usuario* amigo, Usuario* solicitante);
 int esAmigo(Usuario* usuario, Usuario* posibleAmigo);
 
-
+/*
 void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreUsuarioAmigo) {
     Usuario* amigo = buscarUsuario(listaUsuarios, nombreUsuarioAmigo);
     if (amigo != NULL) {
@@ -33,7 +33,7 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreU
         printf("No se encontró el usuario con el nombre especificado.\n");
     }
 }
-
+**/
 //agrega la solicitud (el struct del usuario) a la lista enlazada al struct del usuario(al que se quiere enviar la solicitud)
 void agregarSolicitudAmistad(Usuario* amigo, Usuario* solicitante) {
     if (amigo->solicitudesAmistad == NULL) {

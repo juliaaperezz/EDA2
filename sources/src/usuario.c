@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <regex.h>
+//#include <regex.h>
 #include <ctype.h>
 #include "../headers/menu.h"
 #include "../headers/usuario.h"
@@ -35,7 +35,6 @@ Usuario* buscarUsuario(Node* lista, char* nombreUsuario);
 
 
 
-
 //Comprueba que dato introducido por el usuario en edad sea un número entero
 int validarEdad(const char *edad) {
     for (int i = 0; i < strlen(edad); i++) {
@@ -47,23 +46,35 @@ int validarEdad(const char *edad) {
 }
 
 //Comprueba que dato introducido por el usuario en correo electrónico sea uno válido
+
 int validarCorreo(const char *correo) {
-    regex_t regex;
-    int reti = regcomp(&regex, "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$", REG_EXTENDED);
-    if (reti != 0) {
-        printf("Error al compilar la expresión regular para validar el correo.\n");
+    int i, arroba = 0, punto = 0;
+    int longitud = strlen(correo);
+
+    // Verificar si el correo tiene al menos un caracter antes de la arroba
+    if (correo[0] == '@' || correo[longitud - 1] == '@') {
         return 0;
     }
-
-    reti = regexec(&regex, correo, 0, NULL, 0);
-    regfree(&regex);
-
-    if (reti == 0) {
-        return 1;  // El correo es válido
-    } else {
-        return 0;  // El correo no es válido
+    // Verificar si hay exactamente un caracter '@' y al menos un caracter '.' después de la arroba
+    for (i = 0; i < longitud; i++) {
+        if (correo[i] == '@') {
+            arroba++;
+        } else if (correo[i] == '.') {
+            punto++;
+        }
     }
+    if (arroba != 1 || punto == 0 || punto == longitud - 1) {
+        return 0;
+    }
+    // Verificar que no haya dos puntos consecutivos
+    for (i = 0; i < longitud - 1; i++) {
+        if (correo[i] == '.' && correo[i + 1] == '.') {
+            return 0;
+        }
+    }
+    return 1;  // El correo tiene un formato básico válido
 }
+
 
 // PRIMERA OPCIÓN DEL MENÚ: insertar nuevo usuario
 
@@ -100,14 +111,18 @@ void insertarUsuario(Usuario usuarios[], int *contadorUsuarios) {
     for (int i = 0; i < 5; i++) {
         scanf("%s", usuarios[*contadorUsuarios].gustos[i]);
     }
-    (*contadorUsuarios)++;
-    printf("Usuario insertado correctamente.\n");
+    if (*contadorUsuarios < MAX_USUARIOS) {
+        (*contadorUsuarios)++;
+        printf("Usuario insertado correctamente.\n");
+    } else {
+        printf("No se puede insertar más usuarios. El arreglo está lleno.\n");
+    }
 }
 
 
 
-    //estructura node en headers
-    // Función que agrega los nuevos usuarios a la lista dinamica
+//estructura node en headers
+//Función que agrega los nuevos usuarios a la lista dinamica
 void agregarUsuario(Node** lista, Usuario usuario) {
     //reservamos más memoria
     Node* nuevoNodo = (Node*)malloc(sizeof(Node));
@@ -147,7 +162,6 @@ void enviarSolicitudAmistad(Usuario usuarios[], int contadorUsuarios, int indice
             break;
         }
     }
-
     if (indiceAmigo == -1) {
         printf("El usuario al que desea enviar la solicitud de amistad no existe.\n");
     } else {
@@ -155,7 +169,7 @@ void enviarSolicitudAmistad(Usuario usuarios[], int contadorUsuarios, int indice
     }
 }
 
-/*
+
 void gestionarSolicitudesPendientes() {
     printf("Gestionando solicitudes pendientes.\n");
     // Aquí puedes implementar la lógica para gestionar las solicitudes de amistad pendientes
@@ -173,12 +187,23 @@ void listarPublicaciones(Usuario usuarios[], int contadorUsuarios, int indiceUsu
     printf("Publicaciones del usuario %s:\n", usuarios[indiceUsuario].nombreUsuario);
     // Aquí puedes implementar la lógica para listar las publicaciones del usuario seleccionado
 }
-*/
+
+Usuario* buscarUsuario(Node* lista, char* nombreUsuario) {
+    Node* current = lista;
+    while (current != NULL) {
+        if (strcmp(current->usuario.nombreUsuario, nombreUsuario) == 0) {
+            return &(current->usuario); // Se encontró el usuario
+        }
+        current = current->next;
+    }
+    return NULL; // No se encontró el usuario
+}
+
 
 //CUARTA OPCIÓN DEL MENÚ: cargar datos usuarios desde CSV
 
-// falta acabar de comentar
 void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo) {
+    // Abrir el archivo en modo lectura
     FILE* archivo = fopen(nombreArchivo, "r");
     if (archivo == NULL) {
         printf("No se pudo abrir el archivo.\n");
@@ -186,24 +211,26 @@ void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo) {
     }
 
     char linea[MAX_LENGHT*4];
+    // Leer cada línea del archivo
     while (fgets(linea, sizeof(linea), archivo) != NULL) {
-
-        //crea un usuario para cada linia del archivo
+        // Crear un nuevo usuario para almacenar los datos de la línea
         Usuario nuevoUsuario;
+
+        // Utilizar sscanf para leer los valores separados por comas en la línea
         sscanf(linea, "%[^,],%d,%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^,]",
-               nuevoUsuario.nombreUsuario, &(nuevoUsuario.edad), nuevoUsuario.correoElectronico, nuevoUsuario.ubicacion,
-               nuevoUsuario.gustos[0], nuevoUsuario.gustos[1], nuevoUsuario.gustos[2],
-               nuevoUsuario.gustos[3], nuevoUsuario.gustos[4]);
-        //va registrando cada nuevo usuario que crea
+               nuevoUsuario.nombreUsuario, &(nuevoUsuario.edad), nuevoUsuario.correoElectronico,
+               nuevoUsuario.ubicacion, nuevoUsuario.gustos[0], nuevoUsuario.gustos[1],
+               nuevoUsuario.gustos[2], nuevoUsuario.gustos[3], nuevoUsuario.gustos[4]);
+
+        // Agregar el nuevo usuario a la lista
         agregarUsuario(lista, nuevoUsuario);
     }
-    // cerramos el archivo
+    // Cerrar el archivo
     fclose(archivo);
 }
 
 
-
-    // Función para mostrar los datos de un usuario
+// Función para mostrar los datos de un usuario
 void mostrarDatosUsuario(Usuario* usuario) {
     printf("Nombre de usuario: %s\n", usuario->nombreUsuario);
     printf("Edad: %d\n", usuario->edad);
@@ -218,15 +245,7 @@ void mostrarDatosUsuario(Usuario* usuario) {
 
 
 
-
-
-
-
-
-
-
 /*
-
 // Función para buscar una persona por su usuario
 struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
     struct Node *current = head;

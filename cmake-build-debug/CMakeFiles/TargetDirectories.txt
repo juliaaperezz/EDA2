@@ -1,3 +1,3 @@
-/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles/EDA2_proyecto.dir
-/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/dipti/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles/EDA2_proyecto.dir
+C:/Users/dipti/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dipti/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

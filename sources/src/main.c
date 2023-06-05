@@ -6,7 +6,7 @@
 #include "../headers/funciones submenu.h"
 #include "../headers/main.h"
 
-void mostrarMenuPrincipal();
+void mostrarMenuPrincipal(); // funcion: ?
 void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo);
 
 
@@ -15,9 +15,10 @@ int main() {
     printf("Bienvenido a BookTune! :)\n");
     // creamos lista de usuarios
 
-    struct Node* listaUsuarios = NULL;
+    //struct Node* listaUsuarios = NULL;
 
     //mostramos el menú
     mostrarMenuPrincipal();
+    // faltaba pasar la lista para que se pueda modificar (agregar listaUsuarios como argumento)
     return 0;
 }

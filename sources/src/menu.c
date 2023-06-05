@@ -133,7 +133,7 @@ void submenuUsuario(Usuario usuarios[], int contadorUsuarios) {
 #include "../headers/usuario.h"
 #include "../headers/funciones submenu.h"
 #include "../headers/main.h"
-
+// estas declaraciones se realizan en el header, no en el source. Al no haber ninguna función util en los headers, el CLion los marca como "inutiles"
 // Declaración de funciones menú
 void mostrarMenuPrincipal();
 void insertarUsuario(Usuario usuarios[], int *contadorUsuarios);
@@ -170,10 +170,11 @@ void mostrarMenuPrincipal() {
 
         switch (opcion) {
             case 1:
+               // insertarUsuario(usuarios, &contadorUsuarios);
                 insertarUsuario(usuarios, &contadorUsuarios);
                 break;
             case 2:
-                listarUsuarios(usuarios, contadorUsuarios);
+                listarUsuarios(usuarios);
                 break;
             case 3:
 

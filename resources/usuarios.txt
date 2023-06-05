@@ -1,4 +1,4 @@
-Alex Red, 28, alex123@email.com, Nueva York, yoga, novelas históricas, Ver películas de terror, Hacer caminatas en la naturaleza,Cocinar recetas vegetarianas
+Alex Red , 28, alex123@email.com, Nueva York, yoga, novelas históricas, Ver películas de terror, Hacer caminatas en la naturaleza, Cocinar recetas vegetarianas
 Lisa Blue, 25, lisablue@email.com, Toronto, yoga, libros de autoayuda, Ver documentales, Viajar a lugares naturales, Cocinar platillos étnicos
 Max Green, 32, maxgreen@email.com, Seattle, senderismo, libros de negocios, Ver películas de acción, Escalar montañas, Cocinar platillos orgánicos
 Sarah Rose, 27, sarahrose@email.com, Londres, pilates, novelas románticas, Ver comedias, Ir de compras en tiendas vintage, Escuchar música de los años 80

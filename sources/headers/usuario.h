@@ -1,7 +1,6 @@
 //
 // Created by julia on 09/05/2023.
 //
-
 #ifndef EDA2_PROYECTO_USUARIO_H
 #define EDA2_PROYECTO_USUARIO_H
 
@@ -11,6 +10,11 @@
 #define MAX_LENGHT 50
 #define MAX_USUARIOS 100
 #define MAX_PUBLICACIONES 100
+
+typedef struct NodoPublicacion {
+    char contenido[MAX_LENGHT];
+    struct NodoPublicacion* siguiente;
+} NodoPublicacion;
 
 // Definición del typedef para el usuario
 typedef struct {
@@ -23,7 +27,6 @@ typedef struct {
     struct NodoSolicitud* solicitudesAmistad;
     struct NodoPublicacion* publicaciones; // Lista de publicaciones del usuario
 } Usuario;
-
 
 // Estructura para representar un amigo en la lista de amigos de un usuario
 typedef struct NodoAmigo {
@@ -38,6 +41,7 @@ typedef struct NodoSolicitud {
 } NodoSolicitud;
 
 
+
 // creamos esta estructura para poder crear una lista dinamica de los usuarios
 typedef struct Node {
     Usuario usuario;  //queremos listar los usuarios
@@ -45,8 +49,3 @@ typedef struct Node {
     struct Node* prev;
 } Node;
 
-
-typedef struct NodoPublicacion {
-    char contenido[MAX_LENGHT];
-    struct NodoPublicacion* siguiente;
-} NodoPublicacion;

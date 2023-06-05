@@ -15,10 +15,11 @@ int validarCorreo(const char *correo);
 void insertarUsuario(Usuario usuarios[], int *contadorUsuarios);
 
 //para segunda opción del menú
-void listarUsuarios(Usuario usuarios[], int contadorUsuarios);
-
+void listarUsuarios(struct Node *lista);
+int contarUsuarios(struct Node *lista);
 //para tercera opción del menú
 void submenuUsuario(Usuario usuarios[], int contadorUsuarios);
+
 void enviarSolicitudAmistad(Usuario usuarios[], int contadorUsuarios, int indiceUsuario);
 void gestionarSolicitudesPendientes();
 void realizarPublicacion(int indiceUsuario);
@@ -32,7 +33,6 @@ void agregarUsuario(Node** lista,  Usuario usuario);  //CORRECTA
 
 //para tercera opción del menú
 Usuario* buscarUsuario(Node* lista, char* nombreUsuario);
-
 
 
 //Comprueba que dato introducido por el usuario en edad sea un número entero
@@ -91,7 +91,7 @@ void insertarUsuario(Usuario usuarios[], int *contadorUsuarios) {
             printf("La edad no es un número entero. Intente nuevamente.\n");
         }
     } while (!validarEdad(edad));
-    usuarios[*contadorUsuarios].edad = atoi(edad);
+    usuarios[*contadorUsuarios].edad = atoi(edad);   // ASCII to integer
 
     // Validación del correo electrónico
     char correo[50];
@@ -120,14 +120,13 @@ void insertarUsuario(Usuario usuarios[], int *contadorUsuarios) {
 }
 
 
-
 //estructura node en headers
-//Función que agrega los nuevos usuarios a la lista dinamica
+// Función que agrega los nuevos usuarios a la lista dinámica
 void agregarUsuario(Node** lista, Usuario usuario) {
-    //reservamos más memoria
+    // Reservar memoria para el nuevo nodo
     Node* nuevoNodo = (Node*)malloc(sizeof(Node));
     nuevoNodo->usuario = usuario;
-    //nuevoNodo sera el siguiente en la lista
+    // El nuevo nodo será el siguiente en la lista
     nuevoNodo->next = *lista;
     *lista = nuevoNodo;
 }
@@ -135,15 +134,21 @@ void agregarUsuario(Node** lista, Usuario usuario) {
 //SEGUNDA OPCIÓN DEL MENÚ: listar usuarios existentes
 
 // Función lista los usuarios existentes
-void listarUsuarios(Usuario usuarios[], int contadorUsuarios) {
-    printf("Usuarios existentes:\n");
-    for (int i = 0; i < contadorUsuarios; i++) {
-        printf("Nombre: %s, Edad: %d, Correo: %s, Ubicación: %s\n", usuarios[i].nombreUsuario, usuarios[i].edad, usuarios[i].correoElectronico, usuarios[i].ubicacion);
-        printf("Gustos o preferencias:\n");
-        for (int j = 0; j < 5; j++) {
-            printf("%d. %s\n", j+1, usuarios[i].gustos[j]);
+void listarUsuarios(Node* lista) {
+    if (lista == NULL) {
+        printf("No hay usuarios registrados.\n");
+    } else {
+        printf("Usuarios existentes:\n");
+        while (lista != NULL) {
+            Usuario usuario = lista->usuario;
+            printf("Nombre: %s, Edad: %d, Correo: %s, Ubicación: %s\n", usuario.nombreUsuario, usuario.edad, usuario.correoElectronico, usuario.ubicacion);
+            printf("Gustos o preferencias:\n");
+            for (int j = 0; j < 5; j++) {
+                printf("%d. %s\n", j+1, usuario.gustos[j]);
+            }
+            printf("\n");
+            lista = lista->next;
         }
-        printf("\n");
     }
 }
 
@@ -202,6 +207,7 @@ Usuario* buscarUsuario(Node* lista, char* nombreUsuario) {
 
 //CUARTA OPCIÓN DEL MENÚ: cargar datos usuarios desde CSV
 
+// Función para cargar datos de usuarios desde un archivo CSV
 void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo) {
     // Abrir el archivo en modo lectura
     FILE* archivo = fopen(nombreArchivo, "r");
@@ -210,7 +216,7 @@ void cargarUsuariosDesdeArchivo(Node** lista, char* nombreArchivo) {
         return;
     }
 
-    char linea[MAX_LENGHT*4];
+    char linea[MAX_LENGHT * 4];
     // Leer cada línea del archivo
     while (fgets(linea, sizeof(linea), archivo) != NULL) {
         // Crear un nuevo usuario para almacenar los datos de la línea
@@ -242,36 +248,3 @@ void mostrarDatosUsuario(Usuario* usuario) {
     }
 }
 
-
-
-
-/*
-// Función para buscar una persona por su usuario
-struct Node* buscar_usuario(struct Node *head, char *nombreUsuario) {
-    struct Node *current = head;
-    while (current != NULL) {
-        if (strcmp(current->usuario.nombreUsuario, nombreUsuario) == 0) {
-            return current; // Se encontró el usuario
-        }
-        current = current->next;
-    }
-    return NULL; // No se encontró el usuario
-}
-
-void cargar_usuarios (struct Node* head) {
-    struct Node* current = head;
-    while (current != NULL) {
-        printf ("Nombre del Usuario/a : %s\n", current->usuario.nombreUsuario);
-        printf ("Edad : %d\n", current->usuario.edad);
-        printf ("Correo electrónico : %s\n", current->usuario.correoElectronico);
-        printf ("Ubicación : %s\n", current->usuario.ubicacion);
-        printf ("Gustos : %s\n", current->usuario.gustos);
-
-        for (int i = 0; i < MAX_INTERESTS, i++) {
-            printf (" - %s", current -> usuario.gustos[i]);
-        }
-        printf ("\n");
-        current = current->next;
-    }
-}
-*/

@@ -16,6 +16,8 @@ Usuario* buscarUsuario(Node* lista, char* nombreUsuario);
 void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreUsuarioAmigo);
 void agregarSolicitudAmistad(Usuario* amigo, Usuario* solicitante);
 int esAmigo(Usuario* usuario, Usuario* posibleAmigo);
+void gestionarSolicitudesPendientes(Usuario* usuario) ;
+
 
 /*
 void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreUsuarioAmigo) {
@@ -35,6 +37,8 @@ void enviarSolicitudAmistad(Node* listaUsuarios, Usuario* usuario, char* nombreU
 }
 **/
 //agrega la solicitud (el struct del usuario) a la lista enlazada al struct del usuario(al que se quiere enviar la solicitud)
+//función que verifica si ya son amigos
+// Función para agregar una solicitud de amistad a un usuario
 void agregarSolicitudAmistad(Usuario* amigo, Usuario* solicitante) {
     if (amigo->solicitudesAmistad == NULL) {
         amigo->solicitudesAmistad = (NodoSolicitud*)malloc(sizeof(NodoSolicitud));
@@ -52,7 +56,7 @@ void agregarSolicitudAmistad(Usuario* amigo, Usuario* solicitante) {
     }
 }
 
-//función que verifica si ya son amigos
+// Función para verificar si dos usuarios son amigos
 int esAmigo(Usuario* usuario, Usuario* posibleAmigo) {
     NodoAmigo* actual = usuario->amigos;
     while (actual != NULL) {
@@ -95,5 +99,9 @@ void agregarAmigoDesconocido(Node* listaUsuarios, Usuario* usuario) {
 }
 
 */
+
+
+
+
 
 

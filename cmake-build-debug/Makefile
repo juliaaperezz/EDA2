@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/carlanunezvinas/Documents/GitHub/EDA2
+CMAKE_SOURCE_DIR = "/Users/carlanunezvinas/Documents/EDA2 2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/carlanunezvinas/Documents/EDA2 2/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles /Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/carlanunezvinas/Documents/EDA2 2/cmake-build-debug/CMakeFiles" "/Users/carlanunezvinas/Documents/EDA2 2/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlanunezvinas/Documents/GitHub/EDA2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/carlanunezvinas/Documents/EDA2 2/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,54 @@ EDA2_proyecto: cmake_check_build_system
 EDA2_proyecto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/build
 .PHONY : EDA2_proyecto/fast
+
+sources/src/document_r.o: sources/src/document_r.c.o
+.PHONY : sources/src/document_r.o
+
+# target to build an object file
+sources/src/document_r.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.o
+.PHONY : sources/src/document_r.c.o
+
+sources/src/document_r.i: sources/src/document_r.c.i
+.PHONY : sources/src/document_r.i
+
+# target to preprocess a source file
+sources/src/document_r.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.i
+.PHONY : sources/src/document_r.c.i
+
+sources/src/document_r.s: sources/src/document_r.c.s
+.PHONY : sources/src/document_r.s
+
+# target to generate assembly for a file
+sources/src/document_r.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.s
+.PHONY : sources/src/document_r.c.s
+
+sources/src/documento_2.o: sources/src/documento_2.c.o
+.PHONY : sources/src/documento_2.o
+
+# target to build an object file
+sources/src/documento_2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.o
+.PHONY : sources/src/documento_2.c.o
+
+sources/src/documento_2.i: sources/src/documento_2.c.i
+.PHONY : sources/src/documento_2.i
+
+# target to preprocess a source file
+sources/src/documento_2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.i
+.PHONY : sources/src/documento_2.c.i
+
+sources/src/documento_2.s: sources/src/documento_2.c.s
+.PHONY : sources/src/documento_2.s
+
+# target to generate assembly for a file
+sources/src/documento_2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EDA2_proyecto.dir/build.make CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.s
+.PHONY : sources/src/documento_2.c.s
 
 sources/src/funciones_submenu.o: sources/src/funciones_submenu.c.o
 .PHONY : sources/src/funciones_submenu.o
@@ -234,6 +282,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... EDA2_proyecto"
+	@echo "... sources/src/document_r.o"
+	@echo "... sources/src/document_r.i"
+	@echo "... sources/src/document_r.s"
+	@echo "... sources/src/documento_2.o"
+	@echo "... sources/src/documento_2.i"
+	@echo "... sources/src/documento_2.s"
 	@echo "... sources/src/funciones_submenu.o"
 	@echo "... sources/src/funciones_submenu.i"
 	@echo "... sources/src/funciones_submenu.s"

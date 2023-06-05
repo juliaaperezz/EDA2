@@ -1,10 +1,9 @@
-
 /*
-#include "../headers/menu.h"
-#include "../headers/usuario.h"
-#include "../headers/funciones submenu.h"
-#include "../headers/main.h"
+//
+// Created by Carla Núñez Viñas on 3/6/23.
+//
 
+#include "../headers/documento 2.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,6 +14,7 @@
 #define MAX_LOCATION_LENGTH 50
 #define MAX_PREFERENCES 5
 #define MAX_POST_LENGTH 120
+#define MAX_TOP_WORDS 10
 
 // Estructura de usuario
 typedef struct {
@@ -23,6 +23,8 @@ typedef struct {
     char email[MAX_EMAIL_LENGTH];
     char location[MAX_LOCATION_LENGTH];
     char preferences[MAX_PREFERENCES][MAX_NAME_LENGTH];
+    char posts[MAX_POST_LENGTH][MAX_POST_LENGTH];
+    int postCount;
 } User;
 
 // Lista dinámica de usuarios
@@ -111,6 +113,8 @@ void insertUser(UserList *list) {
         fgets(newUser.preferences[i], MAX_NAME_LENGTH, stdin);
         newUser.preferences[i][strcspn(newUser.preferences[i], "\n")] = '\0'; // Eliminar el salto de línea
     }
+
+    newUser.postCount = 0;
 
     list->users[list->count++] = newUser;
     printf("User inserted successfully.\n");
@@ -228,19 +232,32 @@ void handleFriendRequests(User *user) {
 
 // Función para crear una publicación
 void createPost(User *user) {
+    if (user->postCount >= MAX_POST_LENGTH) {
+        printf("Maximum number of posts reached.\n");
+        return;
+    }
+
     char post[MAX_POST_LENGTH];
     printf("Enter your post (up to %d characters): ", MAX_POST_LENGTH);
     fgets(post, MAX_POST_LENGTH, stdin);
     post[strcspn(post, "\n")] = '\0'; // Eliminar el salto de línea
 
-    // Agrega la publicación a la lista de publicaciones del usuario
-    // Puedes implementar esto como una función adicional
+    strncpy(user->posts[user->postCount++], post, MAX_POST_LENGTH);
+    printf("Post created successfully.\n");
 }
 
 // Función para listar las publicaciones de un usuario
 void listUserPosts(User *user) {
-    // Lista las publicaciones del usuario
-    // Puedes implementar esto como una función adicional
+    if (user->postCount == 0) {
+        printf("No posts found for this user.\n");
+        return;
+    }
+
+    printf("=== POSTS ===\n");
+    for (int i = 0; i < user->postCount; i++) {
+        printf("%s\n", user->posts[i]);
+    }
+    printf("============\n");
 }
 
 // Función para mostrar las 10 palabras más usadas en las publicaciones de todos los usuarios

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.o"
+  "CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.o.d"
+  "CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.o"
+  "CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.o.d"
   "CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.o"
   "CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.o.d"
   "CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.o"

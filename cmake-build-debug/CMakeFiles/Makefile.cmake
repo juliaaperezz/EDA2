@@ -84,7 +84,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/ProcessorCount.cmake"
-  "/Users/carlanunezvinas/Documents/GitHub/EDA2/CMakeLists.txt"
+  "/Users/carlanunezvinas/Documents/EDA2 2/CMakeLists.txt"
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
   )

@@ -1,5 +1,5 @@
 CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.o: \
-  /Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/menu.c \
+  /Users/carlanunezvinas/Documents/EDA2\ 2/sources/src/menu.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/cdefs.h \
@@ -80,7 +80,7 @@ CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/secure/_string.h \
-  /Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/../headers/menu.h \
-  /Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/../headers/usuario.h \
-  /Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/../headers/funciones\ submenu.h \
-  /Users/carlanunezvinas/Documents/GitHub/EDA2/sources/src/../headers/main.h
+  /Users/carlanunezvinas/Documents/EDA2\ 2/sources/src/../headers/menu.h \
+  /Users/carlanunezvinas/Documents/EDA2\ 2/sources/src/../headers/usuario.h \
+  /Users/carlanunezvinas/Documents/EDA2\ 2/sources/src/../headers/funciones\ submenu.h \
+  /Users/carlanunezvinas/Documents/EDA2\ 2/sources/src/../headers/main.h

@@ -1,18 +1,10 @@
 # ninja log v5
 37	1212	7077436986007050	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
-2	378	7077438453668314	build.ninja	ba42177083b28ca4
+2	378	7077457033698130	build.ninja	ba42177083b28ca4
 4	3261	7077437000297745	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
 4	211	7077438255801327	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
-843	1304	7074911754275789	EDA2_proyecto.exe	9b50bcef9342a6e9
+301	467	7077445361906846	EDA2_proyecto.exe	94853eaee873e424
 0	18	0	clean	d7e8aa65e3f37166
 54	2747	7077436995294247	CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.obj	baf149fd6d26519a
 72	3141	7077437001913752	CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.obj	ebff1b10f305a96f
-148	3556	7077437009865008	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
-4	326	7077439282388736	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
-327	798	7077439286552065	EDA2_proyecto.exe	94853eaee873e424
-5	326	7077442129226750	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
-326	527	7077442131113024	EDA2_proyecto.exe	94853eaee873e424
-5	1852	7077443096119268	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
-1853	3554	7077443113315571	EDA2_proyecto.exe	94853eaee873e424
 5	301	7077445360350491	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
-301	467	7077445361906846	EDA2_proyecto.exe	94853eaee873e424

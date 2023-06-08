@@ -3,4 +3,4 @@ project(EDA2_proyecto C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(EDA2_proyecto sources/src/menu.c sources/headers/menu.h sources/src/usuario.c sources/headers/usuario.h sources/src/main.c sources/headers/main.h "sources/src/funciones submenu.c" "sources/headers/funciones submenu.h" "sources/src/documento 2.c" "sources/headers/documento 2.h" "sources/src/document r.c" "sources/headers/document r.h" "sources/src/el definitivo.c")
+add_executable(untitled6 sources/srcs/main+menu.c sources/headers/main+menu.h sources/srcs/usuarios.c sources/headers/usuarios.h sources/srcs/posts.c sources/headers/posts.h sources/srcs/merge_users.c sources/headers/merge_users.h sources/srcs/stack_strangers.c sources/headers/stack_strangers.h sources/srcs/dictionary_words.c sources/headers/dictionary_words.h )

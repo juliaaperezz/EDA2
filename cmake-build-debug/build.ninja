@@ -41,73 +41,67 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/universidad/EDA2_proyecto/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target EDA2_proyecto
+# Object build statements for EXECUTABLE target untitled6
 
 
 #############################################
-# Order-only phony target for EDA2_proyecto
+# Order-only phony target for untitled6
 
-build cmake_object_order_depends_target_EDA2_proyecto: phony || CMakeFiles/EDA2_proyecto.dir
+build cmake_object_order_depends_target_untitled6: phony || CMakeFiles/untitled6.dir
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/menu.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\menu.c.obj.d
+build CMakeFiles/untitled6.dir/sources/srcs/main+menu.c.obj: C_COMPILER__untitled6_Debug C$:/universidad/EDA2_proyecto/sources/srcs/main+menu.c || cmake_object_order_depends_target_untitled6
+  DEP_FILE = CMakeFiles\untitled6.dir\sources\srcs\main+menu.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
+  OBJECT_DIR = CMakeFiles\untitled6.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled6.dir\sources\srcs
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/usuario.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\usuario.c.obj.d
+build CMakeFiles/untitled6.dir/sources/srcs/usuarios.c.obj: C_COMPILER__untitled6_Debug C$:/universidad/EDA2_proyecto/sources/srcs/usuarios.c || cmake_object_order_depends_target_untitled6
+  DEP_FILE = CMakeFiles\untitled6.dir\sources\srcs\usuarios.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
+  OBJECT_DIR = CMakeFiles\untitled6.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled6.dir\sources\srcs
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/main.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\main.c.obj.d
+build CMakeFiles/untitled6.dir/sources/srcs/posts.c.obj: C_COMPILER__untitled6_Debug C$:/universidad/EDA2_proyecto/sources/srcs/posts.c || cmake_object_order_depends_target_untitled6
+  DEP_FILE = CMakeFiles\untitled6.dir\sources\srcs\posts.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
+  OBJECT_DIR = CMakeFiles\untitled6.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled6.dir\sources\srcs
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/funciones$ submenu.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\funciones_submenu.c.obj.d
+build CMakeFiles/untitled6.dir/sources/srcs/merge_users.c.obj: C_COMPILER__untitled6_Debug C$:/universidad/EDA2_proyecto/sources/srcs/merge_users.c || cmake_object_order_depends_target_untitled6
+  DEP_FILE = CMakeFiles\untitled6.dir\sources\srcs\merge_users.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
+  OBJECT_DIR = CMakeFiles\untitled6.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled6.dir\sources\srcs
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/documento$ 2.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\documento_2.c.obj.d
+build CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj: C_COMPILER__untitled6_Debug C$:/universidad/EDA2_proyecto/sources/srcs/stack_strangers.c || cmake_object_order_depends_target_untitled6
+  DEP_FILE = CMakeFiles\untitled6.dir\sources\srcs\stack_strangers.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
+  OBJECT_DIR = CMakeFiles\untitled6.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled6.dir\sources\srcs
 
-build CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/document$ r.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\document_r.c.obj.d
+build CMakeFiles/untitled6.dir/sources/srcs/dictionary_words.c.obj: C_COMPILER__untitled6_Debug C$:/universidad/EDA2_proyecto/sources/srcs/dictionary_words.c || cmake_object_order_depends_target_untitled6
+  DEP_FILE = CMakeFiles\untitled6.dir\sources\srcs\dictionary_words.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
-
-build CMakeFiles/EDA2_proyecto.dir/sources/src/el_definitivo.c.obj: C_COMPILER__EDA2_proyecto_Debug C$:/universidad/EDA2_proyecto/sources/src/el$ definitivo.c || cmake_object_order_depends_target_EDA2_proyecto
-  DEP_FILE = CMakeFiles\EDA2_proyecto.dir\sources\src\el_definitivo.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDA2_proyecto.dir\sources\src
+  OBJECT_DIR = CMakeFiles\untitled6.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled6.dir\sources\srcs
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target EDA2_proyecto
+# Link build statements for EXECUTABLE target untitled6
 
 
 #############################################
-# Link the executable EDA2_proyecto.exe
+# Link the executable untitled6.exe
 
-build EDA2_proyecto.exe: C_EXECUTABLE_LINKER__EDA2_proyecto_Debug CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.obj CMakeFiles/EDA2_proyecto.dir/sources/src/el_definitivo.c.obj
+build untitled6.exe: C_EXECUTABLE_LINKER__untitled6_Debug CMakeFiles/untitled6.dir/sources/srcs/main+menu.c.obj CMakeFiles/untitled6.dir/sources/srcs/usuarios.c.obj CMakeFiles/untitled6.dir/sources/srcs/posts.c.obj CMakeFiles/untitled6.dir/sources/srcs/merge_users.c.obj CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj CMakeFiles/untitled6.dir/sources/srcs/dictionary_words.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\EDA2_proyecto.dir
+  OBJECT_DIR = CMakeFiles\untitled6.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = EDA2_proyecto.exe
-  TARGET_IMPLIB = libEDA2_proyecto.dll.a
-  TARGET_PDB = EDA2_proyecto.exe.dbg
+  TARGET_FILE = untitled6.exe
+  TARGET_IMPLIB = libuntitled6.dll.a
+  TARGET_PDB = untitled6.exe.dbg
 
 
 #############################################
@@ -135,7 +129,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build EDA2_proyecto: phony EDA2_proyecto.exe
+build untitled6: phony untitled6.exe
 
 # =============================================================================
 # Folder targets.
@@ -145,7 +139,7 @@ build EDA2_proyecto: phony EDA2_proyecto.exe
 #############################################
 # Folder: C:/universidad/EDA2_proyecto/cmake-build-debug
 
-build all: phony EDA2_proyecto.exe
+build all: phony untitled6.exe
 
 # =============================================================================
 # Built-in targets

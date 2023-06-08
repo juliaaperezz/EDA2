@@ -1,10 +1,18 @@
 # ninja log v5
 37	1212	7077436986007050	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
-2	378	7077457033698130	build.ninja	ba42177083b28ca4
+2	378	7079418788120299	build.ninja	ba42177083b28ca4
 4	3261	7077437000297745	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
 4	211	7077438255801327	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
-301	467	7077445361906846	EDA2_proyecto.exe	94853eaee873e424
 0	18	0	clean	d7e8aa65e3f37166
 54	2747	7077436995294247	CMakeFiles/EDA2_proyecto.dir/sources/src/funciones_submenu.c.obj	baf149fd6d26519a
 72	3141	7077437001913752	CMakeFiles/EDA2_proyecto.dir/sources/src/document_r.c.obj	ebff1b10f305a96f
-5	301	7077445360350491	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
+4	227	7077700200440124	CMakeFiles/EDA2_proyecto.dir/sources/src/documento_2.c.obj	ea41e1530b3b0946
+40	1767	7077698673863146	CMakeFiles/EDA2_proyecto.dir/sources/src/el_definitivo.c.obj	6f038c91436ce31e
+27	290	7077692422481500	CMakeFiles/EDA2_proyecto.dir/sources/src/aaaaaaaaaaaaa.c.obj	d4cb9c727155fb33
+55	343	7079419026503107	CMakeFiles/untitled6.dir/sources/srcs/merge_users.c.obj	510e1a9f8e7f282e
+1	362	7079419026826026	CMakeFiles/untitled6.dir/sources/srcs/main+menu.c.obj	afdac10cd0626681
+21	364	7079419026635534	CMakeFiles/untitled6.dir/sources/srcs/posts.c.obj	9757aecd1ce8a27b
+41	380	7079419026992780	CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj	a3cccd6c722e712b
+30	396	7079419027213581	CMakeFiles/untitled6.dir/sources/srcs/dictionary_words.c.obj	73e9438b998dfc41
+11	402	7079419027279008	CMakeFiles/untitled6.dir/sources/srcs/usuarios.c.obj	ae87d305b16b935c
+402	647	7079419029688930	untitled6.exe	1d927c4d793e1ef5

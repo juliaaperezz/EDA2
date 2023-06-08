@@ -1,0 +1,9 @@
+//
+// Created by julia on 07/06/2023.
+//
+
+#ifndef UNTITLED6_STACK_STRANGERS_H
+#define UNTITLED6_STACK_STRANGERS_H
+
+#endif //UNTITLED6_STACK_STRANGERS_H
+

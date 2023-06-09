@@ -91,11 +91,13 @@ void operateAsUser(UserList *list) {
         printf("\n=== USER MENU ===\n");
         printf("1. Send friend requests\n");
         printf("2. Connect with a stranger\n");
-        printf("3. Manage pending friend requests\n");
-        printf("4. Create a post\n");
-        printf("5. List user posts\n");
-        printf("6. Top 10 words most used among all users\n");
-        printf("7. Go back to the main menu\n");
+        printf("3. Connect with a stranger with common preferences\n");
+        printf("4. Manage pending friend requests\n");
+        printf("5. Create a post\n");
+        printf("6. List user posts\n");
+        printf("7. List all registered users posts\n");
+        printf("8. Top 10 words most used among all users\n");
+        printf("9. Go back to the main menu\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
         getchar();
@@ -108,22 +110,28 @@ void operateAsUser(UserList *list) {
                 connectWithStrangers(list, user);
                 break;
             case 3:
-                handleFriendRequests(list, user);
+                addUnknownFriend(user, list);
                 break;
             case 4:
-                createPost(user);
+                handleFriendRequests(list, user);
                 break;
             case 5:
-                listUserPosts(user);
+                createPost(user);
                 break;
             case 6:
-                displayTopWords(list);
+                listUserPosts(user);
                 break;
             case 7:
+                listAllUsersPosts(list);
+                break;
+            case 8:
+                displayTopWords(list);
+                break;
+            case 9:
                 printf("Going back to the main menu...\n");
                 break;
             default:
                 printf("Invalid choice. Try again.\n");
         }
-    } while (choice != 7);
+    } while (choice != 9);
 }

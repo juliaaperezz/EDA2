@@ -1,6 +1,5 @@
 
-#include "../headers/merge_users.h"
-#include "../headers/posts.h"
+#include "../headers/usuarios.h"
 #include "../headers/main+menu.h"
 
 void merge(User* arr, int left, int middle, int right);

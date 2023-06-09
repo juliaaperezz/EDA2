@@ -1,6 +1,6 @@
 # ninja log v5
 37	1212	7077436986007050	CMakeFiles/EDA2_proyecto.dir/sources/src/main.c.obj	22edd84ef7532203
-2	378	7079418788120299	build.ninja	ba42177083b28ca4
+2	378	7079669987397356	build.ninja	ba42177083b28ca4
 4	3261	7077437000297745	CMakeFiles/EDA2_proyecto.dir/sources/src/menu.c.obj	f9a7d9bbba022e3f
 4	211	7077438255801327	CMakeFiles/EDA2_proyecto.dir/sources/src/usuario.c.obj	bbd4639c30ecb9a5
 0	18	0	clean	d7e8aa65e3f37166
@@ -14,5 +14,20 @@
 21	364	7079419026635534	CMakeFiles/untitled6.dir/sources/srcs/posts.c.obj	9757aecd1ce8a27b
 41	380	7079419026992780	CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj	a3cccd6c722e712b
 30	396	7079419027213581	CMakeFiles/untitled6.dir/sources/srcs/dictionary_words.c.obj	73e9438b998dfc41
-11	402	7079419027279008	CMakeFiles/untitled6.dir/sources/srcs/usuarios.c.obj	ae87d305b16b935c
-402	647	7079419029688930	untitled6.exe	1d927c4d793e1ef5
+4	211	7079668853608965	CMakeFiles/untitled6.dir/sources/srcs/usuarios.c.obj	ae87d305b16b935c
+211	461	7079668856014002	untitled6.exe	1d927c4d793e1ef5
+6	246	7079671379922751	CMakeFiles/untitled6.dir/sources/srcs/main+menu.c.obj	afdac10cd0626681
+248	477	7079671382205703	untitled6.exe	1d927c4d793e1ef5
+5	196	7079676099375162	CMakeFiles/untitled6.dir/sources/srcs/main+menu.c.obj	afdac10cd0626681
+197	535	7079676102700303	untitled6.exe	1d927c4d793e1ef5
+76	251	7080496641319880	CMakeFiles/untitled6.dir/sources/srcs/merge_users.c.obj	510e1a9f8e7f282e
+52	268	7080496641512374	CMakeFiles/untitled6.dir/sources/srcs/posts.c.obj	9757aecd1ce8a27b
+22	271	7080496641572992	CMakeFiles/untitled6.dir/sources/srcs/main+menu.c.obj	afdac10cd0626681
+86	290	7080496641792291	CMakeFiles/untitled6.dir/sources/srcs/dictionary_words.c.obj	73e9438b998dfc41
+64	303	7080496641954836	CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj	a3cccd6c722e712b
+37	321	7080496642182227	CMakeFiles/untitled6.dir/sources/srcs/usuarios.c.obj	ae87d305b16b935c
+321	676	7080496645659933	untitled6.exe	1d927c4d793e1ef5
+3	176	7080540126491681	CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj	a3cccd6c722e712b
+176	343	7080540128127607	untitled6.exe	1d927c4d793e1ef5
+4	184	7080543027817421	CMakeFiles/untitled6.dir/sources/srcs/stack_strangers.c.obj	a3cccd6c722e712b
+185	330	7080543029234211	untitled6.exe	1d927c4d793e1ef5

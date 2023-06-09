@@ -1,8 +1,11 @@
 
 #include "../headers/main+menu.h"
 #include "../headers/posts.h"
+#include "../headers/usuarios.h"
+
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 
@@ -12,18 +15,19 @@ void insertUser(UserList *list);
 void readUsersFromFile(const char *filename, UserList *list);
 void listAllUsers(UserList *list);
 void operateAsUser(UserList *list);
-
 void connectWithStrangers(UserList *list, User *user);
 void handleFriendRequests(UserList *list, User *user);
 void createPost(User *user);
 void listUserPosts(User *user);
+void listAllUsersPosts(UserList *list);
 void displayTopWords(UserList *list);
 User* searchUser(UserList *list, const char *username);
 void addFriend(UserList *list, User user);
+void addUnknownFriend(User *user, UserList *userList);
 
+//Función principal
 int main() {
-    //inicializamos la lista de usuarios
-    printf("\nWelcome to BookTune :) \n");
+    //Inicializamos la lista de usuarios
     UserList userList;
     userList.count = 0;
 
@@ -58,17 +62,19 @@ int main() {
     return 0;
 }
 
+//Función para mostrar en la terminal las múltiples opciones a escoger como funcionalidad
 void displayMenu() {
     printf("\n=== MENU ===\n");
     printf("1. Insert a new user\n");
-    printf("2. Upload users via CSV\n");
+    printf("2. Load users via CSV\n");
     printf("3. List all existing users\n");
     printf("4. Operate as a specific user\n");
     printf("5. Exit\n");
 }
 
-
+// Función para permitir al usuario operar como usuario especifico
 void operateAsUser(UserList *list) {
+    //Inicialización de variables
     char username[MAX_NAME_LENGTH];
     printf("Enter username: ");
     fgets(username, MAX_NAME_LENGTH, stdin);

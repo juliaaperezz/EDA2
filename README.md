@@ -1,6 +1,6 @@
 # EDA2
-enlace report pdf: https://drive.google.com/drive/folders/1Fk58uxIkzjp1jDN_Np_wIeDF1VPYzeDx?usp=sharing 
-enlace video: https://drive.google.com/file/d/1aVOP9Cuhp_ILVgYW-qJeR3vOc3cKUgJ1/view?usp=sharing
+enlace report pdf y video : https://drive.google.com/drive/folders/1Fk58uxIkzjp1jDN_Np_wIeDF1VPYzeDx?usp=sharing 
+
 
 
 
